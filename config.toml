@@ -1,0 +1,39 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Abdul Rafay"
+theme = "osprey-delight"
+
+[Params]
+tagline = "A.Rafay"
+enforceSinglePage = false
+logoBig = "/images/logo.png"
+logoSmall = "favicon.png"
+favicon = "favicon.png"
+
+[Params.Feat]
+useBlog = true
+lazyloading = true
+
+
+[[menu.main]]
+  name = "About"
+  url  = "/#about"
+  weight = 1
+[[menu.main]]
+  name = "Stories"
+  url  = "/#story"
+  weight = 2
+[[menu.main]]
+  name = "Travel"
+  url  = "/#travel"
+  weight = 3
+[[menu.main]]
+  name = "Blog"
+  url  = "/#Blog"
+  weight = 4
+[[menu.main]]
+  # Use icon here to neatly back reference an external site/blog/whatever:
+  pre = "<i class='icon icon-link-ext'></i>&nbsp;"
+  name = ""
+  url  = "/"
+  weight = 5
