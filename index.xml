@@ -8,52 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Mar 2021 22:34:46 +0000</lastBuildDate><atom:link href="https://abdulrafayzaidi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Shah Allah Ditta, Islamabad</title>
-      <link>https://abdulrafayzaidi.github.io/gallery/hugo/</link>
-      <pubDate>Fri, 12 May 2017 22:25:02 -0700</pubDate>
-      
-      <guid>https://abdulrafayzaidi.github.io/gallery/hugo/</guid>
-      <description>linkView = &amp;ldquo;http://gohugo.io/&amp;quot; linkCode = &amp;ldquo;https://github.com/spf13/hugo&amp;quot; Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.</description>
-    </item>
-    
-    <item>
-      <title>Osprey</title>
-      <link>https://abdulrafayzaidi.github.io/gallery/osprey/</link>
-      <pubDate>Mon, 15 May 2017 21:57:17 -0700</pubDate>
-      
-      <guid>https://abdulrafayzaidi.github.io/gallery/osprey/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Toma Nistor</title>
-      <link>https://abdulrafayzaidi.github.io/gallery/toma-nistor/</link>
-      <pubDate>Mon, 15 May 2017 20:00:16 -0700</pubDate>
-      
-      <guid>https://abdulrafayzaidi.github.io/gallery/toma-nistor/</guid>
-      <description>Author of the original Osprey theme.</description>
-    </item>
-    
-    <item>
-      <title>Osprey Delight</title>
-      <link>https://abdulrafayzaidi.github.io/gallery/osprey-delight/</link>
-      <pubDate>Wed, 18 Sep 2019 21:57:17 -0700</pubDate>
-      
-      <guid>https://abdulrafayzaidi.github.io/gallery/osprey-delight/</guid>
-      <description>{{! github-description !}}
-Check it out.</description>
-    </item>
-    
-    <item>
-      <title>kdevo</title>
-      <link>https://abdulrafayzaidi.github.io/gallery/kdevo/</link>
-      <pubDate>Fri, 17 May 2019 22:25:16 -0700</pubDate>
-      
-      <guid>https://abdulrafayzaidi.github.io/gallery/kdevo/</guid>
-      <description>Author of Osprey Delight.</description>
-    </item>
-    
-    <item>
       <title>Three Trials</title>
       <link>https://abdulrafayzaidi.github.io/story/three-trials/</link>
       <pubDate>Sun, 21 Mar 2021 22:34:46 +0000</pubDate>
@@ -77,10 +31,10 @@ They were given a choice to either take a single word from Book in exchange for 
     
     <item>
       <title>Eulogy for 2020</title>
-      <link>https://abdulrafayzaidi.github.io/blog/soot/</link>
+      <link>https://abdulrafayzaidi.github.io/blog/eulogy/</link>
       <pubDate>Sun, 21 Mar 2021 20:34:46 +0000</pubDate>
       
-      <guid>https://abdulrafayzaidi.github.io/blog/soot/</guid>
+      <guid>https://abdulrafayzaidi.github.io/blog/eulogy/</guid>
       <description>You and I are so similar, broken, marred with regrets of things that happened, and longings for things that never would be—we are both more words and fewer deeds, but it was never your fault; I did this to the both of us.
 You are, the lava, a never-ending flow from the heart of the universe itself, creeping, burning, brighter than the brightest of suns, the sweet-child of One, One who forsook us all, and made you the lord in His stead.</description>
     </item>
@@ -155,6 +109,16 @@ yet it is there
 as new as it had been
 the day I buried it
 and its soot has turned</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m Abdul Rafay</title>
+      <link>https://abdulrafayzaidi.github.io/about/</link>
+      <pubDate>Tue, 27 Jun 2017 17:39:21 -0700</pubDate>
+      
+      <guid>https://abdulrafayzaidi.github.io/about/</guid>
+      <description>Engineer, Writer, and Climate Researcher I am fond of exploring distant lands, mountain tops, and forests, the unseen where nobody walks. It brings me close to my roots, connecting me to the mother earth, the origin of all life. So I keep looking for ways to pay respects to the life.
+But man’s greed for more has gone too far. His destructive hands have mutilated our ecosystems. The invasive industrialization, that man calls advancement, now threatens all life.</description>
     </item>
     
   </channel>
