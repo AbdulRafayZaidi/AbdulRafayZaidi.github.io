@@ -4,7 +4,8 @@ title = "Abdul Rafay"
 theme = "osprey-delight"
 
 [Params]
-tagline = "A.Rafay"
+tagline = """# A.Rafay 
+Engineer. Traveller. Writer."""
 enforceSinglePage = false
 logoBig = "/images/logo.png"
 logoSmall = "favicon.png"
@@ -15,25 +16,41 @@ useBlog = true
 lazyloading = true
 
 
+## Social media links in footer:
+[Params.Social]
+  # [str] Link to your Twitter.
+  twitter = ""
+  # [str] Link to your LinkedIn.
+  linkedin = ""
+  # [str] Link to your Facebook.
+  facebook = ""
+  # [str] Link to your Instagram.
+  instagram = ""
+
+
 [[menu.main]]
   name = "About"
-  url  = "/#about"
+  url  = "/about"
   weight = 1
 [[menu.main]]
   name = "Stories"
-  url  = "/#story"
+  url  = "/story"
   weight = 2
 [[menu.main]]
-  name = "Travel"
-  url  = "/#travel"
-  weight = 3
+  name = "Poetry"
+  url  = "/poetry"
+  weight = 2
+# [[menu.main]]
+#   name = "Travel"
+#   url  = "/#travel"
+#   weight = 3
 [[menu.main]]
   name = "Blog"
   url  = "/#Blog"
   weight = 4
-[[menu.main]]
-  # Use icon here to neatly back reference an external site/blog/whatever:
-  pre = "<i class='icon icon-link-ext'></i>&nbsp;"
-  name = ""
-  url  = "/"
-  weight = 5
+# [[menu.main]]
+#   # Use icon here to neatly back reference an external site/blog/whatever:
+#   pre = "<i class='icon icon-link-ext'></i>&nbsp;"
+#   name = ""
+#   url  = "/"
+#   weight = 5

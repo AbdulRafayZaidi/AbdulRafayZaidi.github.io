@@ -6,7 +6,7 @@ image = "images/travel/dsc_0195-1.jpg"
 type = "normal"
 alt = "Shah Allah Ditta, Islamabad"
 color = "#0a1922"
-
+draft = true
 +++
 
 linkView = "http://gohugo.io/"

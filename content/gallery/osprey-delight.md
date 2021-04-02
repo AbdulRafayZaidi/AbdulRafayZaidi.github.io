@@ -27,6 +27,7 @@ terminal:
     - type: input
       data: exit
       wait: 500
+draft: true
 ---
 
 {{! github-description !}}

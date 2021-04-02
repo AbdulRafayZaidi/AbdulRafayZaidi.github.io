@@ -6,6 +6,7 @@ imageUrl = "images/osprey.png"
 color = "#F7F7F7"
 linkView = "https://themes.gohugo.io/theme/osprey/"
 type = "github"
+draft = true
 [github]
     repo = "tomanistor/osprey"
     showInfo = true

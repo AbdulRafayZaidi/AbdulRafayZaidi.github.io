@@ -8,6 +8,7 @@ alt = "kdevo"
 color = "#263238"
 linkView = "https://kdevo.github.io"
 linkCode = "https://github.com/kdevo/"
+draft = true
 +++
 
 Author of Osprey Delight.
