@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>poetry on Abdul Rafay</title><link>http://example.org/tags/poetry/</link><description>Recent content in poetry on Abdul Rafay</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 21 Mar 2021 20:34:46 +0000</lastBuildDate><atom:link href="http://example.org/tags/poetry/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandglass</title><link>http://example.org/poetry/sandglass/</link><pubDate>Sun, 21 Mar 2021 20:34:46 +0000</pubDate><guid>http://example.org/poetry/sandglass/</guid><description>You came to me—a dream
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>poetry on Abdul Rafay</title>
+    <link>https://abdulrafayzaidi.github.io/tags/poetry/</link>
+    <description>Recent content in poetry on Abdul Rafay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Mar 2021 20:34:46 +0000</lastBuildDate><atom:link href="https://abdulrafayzaidi.github.io/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sandglass</title>
+      <link>https://abdulrafayzaidi.github.io/poetry/sandglass/</link>
+      <pubDate>Sun, 21 Mar 2021 20:34:46 +0000</pubDate>
+      
+      <guid>https://abdulrafayzaidi.github.io/poetry/sandglass/</guid>
+      <description>You came to me—a dream
 gently—sinking in a warm
 blonde fall of sand—hourglass
 drowning me ever deep—grains
@@ -13,7 +28,16 @@ the memory of your walk—run
 to catch your path—run—to seek
 refuge in you—run—to the end
 of everything—there is no end
-for days—months— years, I run</description></item><item><title>Soot</title><link>http://example.org/poetry/hero-returns/</link><pubDate>Sun, 21 Mar 2021 20:34:46 +0000</pubDate><guid>http://example.org/poetry/hero-returns/</guid><description>Trumpets beat
+for days—months— years, I run</description>
+    </item>
+    
+    <item>
+      <title>Soot</title>
+      <link>https://abdulrafayzaidi.github.io/poetry/hero-returns/</link>
+      <pubDate>Sun, 21 Mar 2021 20:34:46 +0000</pubDate>
+      
+      <guid>https://abdulrafayzaidi.github.io/poetry/hero-returns/</guid>
+      <description>Trumpets beat
 roses and jasmines
 shower
 from above
@@ -28,7 +52,16 @@ the mother, the father
 and the widow
 all the countrymen hail
 the death of their
-martyr.</description></item><item><title>Soot</title><link>http://example.org/poetry/soot/</link><pubDate>Sun, 21 Mar 2021 20:34:46 +0000</pubDate><guid>http://example.org/poetry/soot/</guid><description>A small flame twinkles
+martyr.</description>
+    </item>
+    
+    <item>
+      <title>Soot</title>
+      <link>https://abdulrafayzaidi.github.io/poetry/soot/</link>
+      <pubDate>Sun, 21 Mar 2021 20:34:46 +0000</pubDate>
+      
+      <guid>https://abdulrafayzaidi.github.io/poetry/soot/</guid>
+      <description>A small flame twinkles
 it flickers as the wind blows
 in the darkness—it rests
 it has your name written all over
@@ -43,4 +76,8 @@ and everything
 yet it is there
 as new as it had been
 the day I buried it
-and its soot has turned</description></item></channel></rss>
+and its soot has turned</description>
+    </item>
+    
+  </channel>
+</rss>
