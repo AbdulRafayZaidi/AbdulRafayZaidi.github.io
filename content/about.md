@@ -4,7 +4,7 @@ date: "2017-06-27T17:39:21-07:00"
 draft: false
 ---
 
-# Engineer, Writer, and Climate Researcher
+# Writer, Traveler, and Climate Researcher
 
 I am fond of exploring distant lands, mountain tops, and forests, the unseen where nobody walks. It brings me close to my roots, connecting me to the mother earth, the origin of all life. So I keep looking for ways to pay respects to life.
 
