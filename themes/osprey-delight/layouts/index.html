@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "body-top" . }}
+    <main>
+      
+
+      <!-- About -->
+      {{ partial "about.html" . }}
+
+      <!-- Gallery -->
+      {{ if not (eq (len (where .Site.RegularPages "Section" "gallery")) 0) }}
+        {{ partial "gallery.html" . }}
+        {{ partial "modals.html" . }}
+      {{ end }}
+
+      {{/*  my galler  */}}
+      <div class="gallery-wrapper">
+        <div class="gallery-container">
+          {{ range (where .Site.RegularPages "Section" "blog") }}
+            {{range .Params.gallery}}
+              {{ range $style, $images := . }}
+                {{ range $image := $images }}
+                <div class="{{ $style }}">
+                  <img src="{{ $image }}" />
+                </div>
+                {{ end }}
+              {{end}}
+            {{end}}
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- Blog -->
+      {{ if .Site.Params.Feat.useBlog -}}
+        {{ if not (eq (len (where .Site.RegularPages "Section" "blog")) 0) }}
+          {{ partial "blog.html" . }}
+          {{ if .Site.Params.enforceSinglePage -}}
+          {{ warnf "enforceSinglePage and useBlog are both set to true. This is very likely not what you want (blog posts will always redirect to main page)"}}
+
+          {{- end }}
+        {{ end }}
+      {{ end }}
+
+      <!-- Contact -->
+      {{ partial "contact.html" . }}
+
+    </main>
+    {{ partial "footer.html" . }}
+    {{ partial "body-bottom" . }}
+  </body>
+</html>

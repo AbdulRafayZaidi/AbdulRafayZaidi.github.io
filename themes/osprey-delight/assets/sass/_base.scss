@@ -1,0 +1,62 @@
+// Font styles
+strong {
+  font-weight: 600;
+}
+
+del,
+s {
+  text-decoration: line-through;
+}
+
+em,
+dfn {
+  font-style: italic;
+}
+
+a {
+  transition: color .2s ease-out;
+  text-decoration: none;
+
+  img {
+    border: 0;
+  }
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+// Images
+img {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+// Lists
+ul,
+ol {
+  margin-bottom: $vertical-rhythm;
+
+  li {
+    margin-left: 1.25em;
+
+    code {
+      font-family: $font-code;
+    }
+  }
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+
+// Show or hide elements
+.show {
+  transition: opacity 600ms;
+}
+
+.hide {
+  opacity: 0;
+}

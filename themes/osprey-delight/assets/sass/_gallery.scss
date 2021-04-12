@@ -1,0 +1,124 @@
+.gallery {
+  .gallery-item {
+    position: relative;
+    width: 50%;
+    padding: 0;
+
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    &:hover {
+      .overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  .overlay {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .25s ease-out;
+    opacity: 0;
+    background-color: $black; cursor: pointer;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+
+    h2 {
+      margin: $vertical-rhythm;
+      color: $white;
+    }
+  }
+
+  .gallery-img-container {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    padding: $vertical-rhythm * 3;
+  }
+
+
+  .gallery-modal-link {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Prevent "broken image" icon from showing up
+img.lazyload:not([src]) {
+	visibility: hidden;
+}
+
+// .lazyload, .lazyloading  {
+//   object-fit: contain;
+//   width: 100%;
+//   height: 400px;
+// }
+
+.gallery-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px;
+  position: relative;
+  background-color: #111;
+}
+
+.gallery-wrapper .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-auto-rows: 400px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+  margin:auto;
+}
+
+.gallery-wrapper .gallery-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+.gallery-wrapper .gallery-container img:hover {
+transform: scale(1.01);
+}
+
+.gallery-wrapper .gallery-container .vertical {
+  grid-row: auto / span 2;
+
+}
+
+.gallery-wrapper .gallery-container .horizontal {
+  grid-column: auto / span 2;
+}
+
+.gallery-wrapper .gallery-container .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
