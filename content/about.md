@@ -4,8 +4,10 @@ date: "2017-06-27T17:39:21-07:00"
 draft: false
 ---
 
-A **Creator, Writer, Traveler, and Climate Researcher**. 
+# A Writer, Traveler, and Climate Researcher.
 
-I am a mechanical engineer by trade and a writer and poet by heart and have been writing since my school days. Now I write here to express myself.
+I am fond of exploring distant lands, mountain tops, and forests, the unseen where nobody walks. It brings me close to my roots, connecting me to the mother earth, the origin of all life. So I keep looking for ways to pay respects to life.
 
-Moreover, I love travelling and [this beautiful Earth](/travel). It saddens me Mother earth has been feeding us and since the beginning yet we are letting here rot and die.
+Being a professional engineer, I have become more conscious of my own environmental impacts. My workplace mainly dealt with plastic products, so I had to find something new, a job that wasn’t a part of the problem, a place that took responsibility. 
+
+I have a passion for writing and have been creating poetry and prose since my school days.  My short story titled “Giddar Singhi” won South Asia Microfiction Award in 2020. I am also currently working on my anthology and hope to publish it this year
