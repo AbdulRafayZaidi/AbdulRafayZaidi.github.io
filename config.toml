@@ -30,7 +30,7 @@ lazyloading = true
 
 [[menu.main]]
   name = "About"
-  url  = "/about"
+  url  = "/about_me"
   weight = 1
 [[menu.main]]
   name = "Stories"

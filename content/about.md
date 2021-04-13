@@ -2,6 +2,7 @@
 title: "I'm Abdul Rafay"
 date: "2017-06-27T17:39:21-07:00"
 draft: false
+image: "/blog/images/1614531325208.jpg"
 ---
 
 # A Writer, Traveler, and Climate Researcher.

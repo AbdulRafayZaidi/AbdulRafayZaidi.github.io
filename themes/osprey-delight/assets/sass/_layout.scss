@@ -12,6 +12,12 @@ body {
 header {
   height: 100vh;
   background-color: $white;
+  background-image: url(http://localhost:1313/blog/images/dsc_7100-1.jpg);
+  background-color: #cfcfcf;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 
   div {
     z-index: 101;
@@ -23,7 +29,7 @@ header {
 
   h1 {
     font-family: $font-body;
-  }
+  }  
 }
 
 footer {
