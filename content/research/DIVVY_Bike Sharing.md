@@ -1,6 +1,6 @@
 title: "Project: Cyclistic bike-share analysis"
 date: 2021-03-21T20:34:46Z
-draft: true
+draft: false
 tags: [
     "Research","Data Analytics", "Bike Sharing", "Cyclist data"
 ]
