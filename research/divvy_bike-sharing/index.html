@@ -173,9 +173,18 @@ distinct(to_station_id)
 <p>Specific stats about most active bikes, stations, and routes can be very helpful for targeted marketing. Every station serves as both the starting and ending point for a ride, so to find the most active stations, rides starting and ending at each station are aggregated, which are then summed together, giving total rides (Start and End) for all of them.</p>
 <p><!-- raw HTML omitted --></p>
 <p>The above circular chart shows 50 most active stations.</p>
-<p>Most Active Stations</p>
-<p>Most Active Routes</p>
-<p>Time Growth of Subscribers</p>
+<p><!-- raw HTML omitted --></p>
+<p>25 Most active Stations for Subscribers and Customers are given above.</p>
+<p>##Routes Analysis</p>
+<p>The data can provide valuable insight into the busiest routes and their connectivity. Because there are 617 stations in total, displaying them all would cause unnecessary clutter. To avoid that, only the most active stations, with total annual rides greater than 200 are filtered. Some rides end at the same starting point, which are also filtered out for this analysis. The data is then manipulated for network analysis using VisNetwork on R.</p>
+<blockquote>
+<p>edges_200 &lt;- routes_complete%&gt;%
+filter(rides&gt;200 &amp; to!=from)</p>
+</blockquote>
+<p><!-- raw HTML omitted --></p>
+<p>The above plot shows most frequent routes taken by subscribers over the year.</p>
+<p><!-- raw HTML omitted --></p>
+<p>The above plot shows most frequent routes taken by customers over the year.</p>
 
           </article>
 
