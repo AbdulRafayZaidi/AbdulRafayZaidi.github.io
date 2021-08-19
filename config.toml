@@ -23,9 +23,9 @@ lazyloading = true
   # [str] Link to your LinkedIn.
   linkedin = ""
   # [str] Link to your Facebook.
-  facebook = ""
+  facebook = "https://www.facebook.com/syedabdurrafayzaidi/"
   # [str] Link to your Instagram.
-  instagram = ""
+  instagram = "https://www.instagram.com/abdul.rafay.zaidi/"
 
 
 [[menu.main]]
@@ -44,6 +44,10 @@ lazyloading = true
 #   name = "Travel"
 #   url  = "/#travel"
 #   weight = 3
+[[menu.main]]
+  name = "Research"
+  url  = "/#Research"
+  weight = 3
 [[menu.main]]
   name = "Blog"
   url  = "/#Blog"
