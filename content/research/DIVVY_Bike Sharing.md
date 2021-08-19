@@ -70,12 +70,12 @@ Specific stats about most active bikes, stations, and routes can be very helpful
 
 The above circular chart shows 50 most active stations.
 
+<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\top stations comb bar.png" alt="25 Most Active Stations by Subscribers and Customers" style="zoom:67%;" />
 
-
-Most Active Stations
-
-Most Active Routes
+25 Most active Stations for both Subscribers and Customers are given above.
 
 
 
-Time Growth of Subscribers
+##Routes Analysis
+
+The data can provide valuable insight into the busiest routes and their connectivity. Because there are 617 stations in total, displaying them all would cause unnecessary clutter. To avoid that, only the most active stations, with total annual rides greater than 200 are filtered. The data is then manipulated for network analysis using VisNetwork on R.
