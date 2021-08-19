@@ -72,10 +72,28 @@ The above circular chart shows 50 most active stations.
 
 <img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\top stations comb bar.png" alt="25 Most Active Stations by Subscribers and Customers" style="zoom:67%;" />
 
-25 Most active Stations for both Subscribers and Customers are given above.
+25 Most active Stations for Subscribers and Customers are given above.
 
 
 
 ##Routes Analysis
 
-The data can provide valuable insight into the busiest routes and their connectivity. Because there are 617 stations in total, displaying them all would cause unnecessary clutter. To avoid that, only the most active stations, with total annual rides greater than 200 are filtered. The data is then manipulated for network analysis using VisNetwork on R.
+The data can provide valuable insight into the busiest routes and their connectivity. Because there are 617 stations in total, displaying them all would cause unnecessary clutter. To avoid that, only the most active stations, with total annual rides greater than 200 are filtered. Some rides end at the same starting point, which are also filtered out for this analysis. The data is then manipulated for network analysis using VisNetwork on R.
+
+> edges_200 <- routes_complete%>% 
+>   filter(rides>200 & to!=from)
+
+
+
+
+
+
+
+<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\Most_Frequent_Routes_by_Subscribers.png" alt="Most Frequent Routes by Subscribers" style="zoom:67%;" />
+
+The above plot shows most frequent routes taken by subscribers over the year.
+
+<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\Most_Frequent_Routes_by_Customers.png" alt="Most Frequent Routes by Customers" style="zoom:67%;" />
+
+The above plot shows most frequent routes taken by customers over the year.
+
