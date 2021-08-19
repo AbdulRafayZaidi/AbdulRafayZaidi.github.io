@@ -36,9 +36,27 @@ Using R, we can take a quick peek of the dataset with following commands.
 
 The combined data has a record 3,818,004 rides, split into 12 columns having Trip ID, Start Time, End Time, Bike ID, Trip Duration, From Station (Starting Point), To Station (End Station), User Type, Gender, and Birthyear. The company has 6,017 bikes and 617 stations.
 
+The data has Age Gender information for almost all the subscribers, but for very few walk in riders, so filtering is done to avoid skewing. 
+
+<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\Gender_Summary.png" alt="Gender_Summary" style="zoom:67%;" />
+
+73% of subscribers identified themselves as Male, 26% as Female, and rest as neither.
 
 
-Short Summary(Gender, User)
+
+
+
+<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\age_rides_summary.png" alt="age_rides_summary" style="zoom:67%;" />
+
+Most riders fell between 20-40years age.
+
+#Distribution by User Type
+
+Grouping the data by User Type reveals interesting statistics. The bar graph displays average daily rides, while the pie chart shows percentage of the total rides.
+
+<img src="P:\Data Analytics\Bicycle Project\Plots\user_type_daily_distribution.png" alt="user_type_daily_distribution" style="zoom:67%;" />
+
+Subscribers are riding more from Tuesday to Saturday and less on Mondays and Sundays. The result is opposite for customers who use it more frequently on Mondays and Sundays.  
 
 Weekly/Daily Usage
 
