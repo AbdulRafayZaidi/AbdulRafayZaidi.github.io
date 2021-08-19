@@ -158,7 +158,7 @@ Being a professional engineer, I have become more conscious of my own environmen
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://syedabdulrafay.com/research/divvy_bike-sharing/</guid>
-      <description>title: &amp;ldquo;Project: Cyclistic bike-share analysis&amp;rdquo; date: 2021-03-21T20:34:46Z draft: true tags: [ &amp;ldquo;Research&amp;rdquo;,&amp;ldquo;Data Analytics&amp;rdquo;, &amp;ldquo;Bike Sharing&amp;rdquo;, &amp;ldquo;Cyclist data&amp;rdquo; ]
+      <description>title: &amp;ldquo;Project: Cyclistic bike-share analysis&amp;rdquo; date: 2021-03-21T20:34:46Z draft: false tags: [ &amp;ldquo;Research&amp;rdquo;,&amp;ldquo;Data Analytics&amp;rdquo;, &amp;ldquo;Bike Sharing&amp;rdquo;, &amp;ldquo;Cyclist data&amp;rdquo; ]
 #Project: Cyclistic bike-share analysis ##Year-2019
 #Introduction
 Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.
