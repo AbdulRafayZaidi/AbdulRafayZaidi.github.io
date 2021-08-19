@@ -26,5 +26,18 @@ You are, the lava, a never-ending flow from the heart of the universe itself, cr
       <description></description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://syedabdulrafay.com/blog/divvy_bike-sharing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://syedabdulrafay.com/blog/divvy_bike-sharing/</guid>
+      <description>title: &amp;ldquo;Project: Cyclistic bike-share analysis&amp;rdquo; date: 2021-08-19 draft: false tags: [ &amp;ldquo;research&amp;rdquo;,&amp;ldquo;blog&amp;rdquo;, ]
+#Project: Cyclistic bike-share analysis ##Year-2019
+#Introduction
+Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.
+The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers.</description>
+    </item>
+    
   </channel>
 </rss>
