@@ -46,7 +46,7 @@ lazyloading = true
 #   weight = 3
 [[menu.main]]
   name = "Research"
-  url  = "/#Research"
+  url  = "/research"
   weight = 3
 [[menu.main]]
   name = "Blog"
