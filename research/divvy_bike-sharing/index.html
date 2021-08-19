@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  
+
+  
+
+  <title>
+    
+     | Abdul Rafay
+  </title>
+
+  <meta name="title" content=" | Abdul Rafay">
+
+  <meta charset="utf-8">
+  
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <base href="https://syedabdulrafay.com/">
+
+  <meta name="description" content="title: &ldquo;Project: Cyclistic bike-share analysis&rdquo; date: 2021-03-21T20:34:46Z draft: true tags: [ &ldquo;Research&rdquo;,&ldquo;Data Analytics&rdquo;, &ldquo;Bike Sharing&rdquo;, &ldquo;Cyclist data&rdquo; ]
+#Project: Cyclistic bike-share analysis ##Year-2019
+#Introduction
+Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.
+The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers.">
+
+  
+
+  
+
+  <meta property="og:title" content=" | Abdul Rafay">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://syedabdulrafay.com/">
+
+  
+
+  <meta name="og:description" content="title: &ldquo;Project: Cyclistic bike-share analysis&rdquo; date: 2021-03-21T20:34:46Z draft: true tags: [ &ldquo;Research&rdquo;,&ldquo;Data Analytics&rdquo;, &ldquo;Bike Sharing&rdquo;, &ldquo;Cyclist data&rdquo; ]
+#Project: Cyclistic bike-share analysis ##Year-2019
+#Introduction
+Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.
+The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers.">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <meta name="theme-color" content="#0097a7">
+
+  <link rel="canonical" href="https://syedabdulrafay.com/research/divvy_bike-sharing/">
+  
+  
+
+  <link rel="stylesheet" href="https://syedabdulrafay.com/style.dfb23c1f7299369ceadd49a327ff40616471c9dbce2b87129fb89434a7918a53.css" type="text/css">
+
+  
+
+  <style>.lazyload{opacity:.0001;}.logo .lazyload{min-width:10em;}</style>
+    <script src="https://syedabdulrafay.com/js/vendor/lazysizes.min.js" async></script>
+</head>
+
+  <body>
+    
+
+
+
+<nav class="row middle-xs center-xs">
+  <div class="col-xs-6 col-sm-1 logo">
+    <a href="/#"><img data-src="favicon.png" class="lazyload" lazyload="on" alt="Abdul Rafay"></a>
+  </div>
+    
+      <div class="col-xs-3 col-sm-2 nav-item">
+        <h3><a href="/about/detail">About</a></h3>
+      </div>
+    
+      <div class="col-xs-3 col-sm-2 nav-item">
+        <h3><a href="/poetry">Poetry</a></h3>
+      </div>
+    
+      <div class="col-xs-3 col-sm-2 nav-item">
+        <h3><a href="/story">Stories</a></h3>
+      </div>
+    
+      <div class="col-xs-3 col-sm-2 nav-item">
+        <h3><a href="/#blog">Blog</a></h3>
+      </div>
+    
+  <div class="col-xs-6 col-sm-1 nav-toggle">
+      <a href="" class="nav-icon" onclick="return false">
+        <i id="open" class="icon icon-2x icon-menu"></i>
+      </a>
+  </div>
+</nav>
+
+<section class="nav-full row middle-xs center-xs">
+  <div class="col-xs-12">
+    <div class="row middle-xs center-xs">
+      
+        <div class="col-xs-12"><h1><a href="/about/detail">About</a></h1></div>
+      
+        <div class="col-xs-12"><h1><a href="/poetry">Poetry</a></h1></div>
+      
+        <div class="col-xs-12"><h1><a href="/story">Stories</a></h1></div>
+      
+        <div class="col-xs-12"><h1><a href="/#blog">Blog</a></h1></div>
+      
+    </div>
+  </div>
+</section>
+
+    <main>
+
+      <section class="container">
+        <section class="content">
+          <h1>  </h1>
+
+            <div class="sub-header">
+              January 1, 0001 · 2 minutes read
+            </div>
+
+          <article class="entry-content">
+            <p>title: &ldquo;Project: Cyclistic bike-share analysis&rdquo;
+date: 2021-03-21T20:34:46Z
+draft: true
+tags: [
+&ldquo;Research&rdquo;,&ldquo;Data Analytics&rdquo;, &ldquo;Bike Sharing&rdquo;, &ldquo;Cyclist data&rdquo;
+]</p>
+<p>#Project: Cyclistic bike-share analysis
+##Year-2019</p>
+<p>#Introduction</p>
+<p>Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.</p>
+<p>The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers. The most data  used is for year 2019 available here <a href="https://divvy-tripdata.s3.amazonaws.com/index.html">https://divvy-tripdata.s3.amazonaws.com/index.html</a> and divided in four quarters. The data for 1st, 2nd, and 4th quarter is in the same format, however for the 3rd quarter, columns names are different. After right corrections, the dataset is merged.</p>
+<p>#Overview</p>
+<p>Using R, we can take a quick peek of the dataset with following commands.</p>
+<blockquote>
+<p>dim(Divvy_Trips_2019_full)
+[1] 3818004      12</p>
+</blockquote>
+<blockquote>
+<p>colnames(Divvy_Trips_2019_full)
+[1] &ldquo;trip_id&rdquo;           &ldquo;start_time&rdquo;        &ldquo;end_time&rdquo;          &ldquo;bikeid&rdquo;        <br>
+[5] &ldquo;tripduration&rdquo;      &ldquo;from_station_id&rdquo;   &ldquo;from_station_name&rdquo; &ldquo;to_station_id&rdquo; <br>
+[9] &ldquo;to_station_name&rdquo;   &ldquo;usertype&rdquo;          &ldquo;gender&rdquo;            &ldquo;birthyear&rdquo;  &quot;</p>
+</blockquote>
+<blockquote>
+<p>Divvy_Trips_2019_full %&gt;%
+distinct(bikeid)
+#A tibble: 6,017 x 1</p>
+</blockquote>
+<blockquote>
+<p>Divvy_Trips_2019_full %&gt;%
+distinct(to_station_id)
+#A tibble: 617 x 1</p>
+</blockquote>
+<p>The combined data has a record 3,818,004 rides, split into 12 columns having Trip ID, Start Time, End Time, Bike ID, Trip Duration, From Station (Starting Point), To Station (End Station), User Type, Gender, and Birthyear. The company has 6,017 bikes and 617 stations.</p>
+<p>Short Summary(Gender, User)</p>
+<p>Weekly/Daily Usage</p>
+<p>Most Active Stations</p>
+<p>Most Active Routes</p>
+<p>Time Growth of Subscribers</p>
+
+          </article>
+
+          <div class="pagination">
+            
+            
+          </div>
+        </section>
+        <br>
+        <section class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+        return;
+      var disqus_shortname = '';
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view comments powered by <a href="http://disqus.com/?ref_noscript">Disqus</a>.</noscript>
+</section>
+
+      </section>
+
+    </main>
+    <footer class="row middle-xs center-xs">
+  <div class="col-xs-2">
+      <a target="_blank" rel="noopener" href=""><i class="icon icon-facebook"></i></a>
+    </div><div class="col-xs-2">
+      <a target="_blank" rel="noopener" href=""><i class="icon icon-instagram"></i></a>
+    </div><div class="col-xs-2">
+      <a target="_blank" rel="noopener" href=""><i class="icon icon-linkedin"></i></a>
+    </div><div class="col-xs-2">
+      <a target="_blank" rel="noopener" href=""><i class="icon icon-twitter"></i></a>
+    </div>
+  
+</footer>
+
+    
+
+
+
+
+
+
+  <script src="https://syedabdulrafay.com/js/bundle.min.912177646c8077b78dac1c8e7f83353de7007110db48b63bf1675347870181de.js" type="text/javascript"></script>
+  <script>handleNavBar( false )</script>
+
+  </body>
+</html>
