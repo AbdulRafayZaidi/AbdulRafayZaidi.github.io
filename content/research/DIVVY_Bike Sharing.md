@@ -54,11 +54,23 @@ Most riders fell between 20-40years age.
 
 Grouping the data by User Type reveals interesting statistics. The bar graph displays average daily rides, while the pie chart shows percentage of the total rides.
 
-<img src="P:\Data Analytics\Bicycle Project\Plots\user_type_daily_distribution.png" alt="user_type_daily_distribution" style="zoom:67%;" />
+<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\user_type_daily_distribution.png" alt="user_type_daily_distribution" style="zoom:67%;" />
 
 Subscribers are riding more from Tuesday to Saturday and less on Mondays and Sundays. The result is opposite for customers who use it more frequently on Mondays and Sundays.  
 
-Weekly/Daily Usage
+<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\time_day_summary.png" alt="time_day_summary" style="zoom:67%;" />
+
+Looking at the stacked-area chart, usage pattern during Evening and Night time is same for both the groups. However,  the trends is opposite for the Afternoon and Morning rides. 
+
+#Leading Statistics
+
+Specific stats about most active bikes, stations, and routes can be very helpful for targeted marketing. Every station serves as both the starting and ending point for a ride, so to find the most active stations, rides starting and ending at each station are aggregated, which are then summed together, giving total rides (Start and End) for all of them. 
+
+<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\top_stations_circplot.png" alt="top_stations_circplot" style="zoom:67%;" />
+
+The above circular chart shows 50 most active stations.
+
+
 
 Most Active Stations
 
