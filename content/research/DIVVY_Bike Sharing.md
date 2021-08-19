@@ -1,8 +1,8 @@
 title: "Project: Cyclistic bike-share analysis"
-date: 2021-03-21T20:34:46Z
+date: 2021-08-19T20:34:46Z
 draft: false
 tags: [
-    "research"
+    "research",
 ]
 
 #Project: Cyclistic bike-share analysis
@@ -83,7 +83,9 @@ The data can provide valuable insight into the busiest routes and their connecti
 > edges_200 <- routes_complete%>% 
 >   filter(rides>200 & to!=from)
 
-
+<html
+src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\routes_network_plot.html"
+/>
 
 
 
