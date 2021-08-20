@@ -38,7 +38,7 @@ The combined data has a record 3,818,004 rides, split into 12 columns having Tri
 
 The data has Age Gender information for almost all the subscribers, but for very few walk in riders, so filtering is done to avoid skewing. 
 
-<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\Gender_Summary.png" alt="Gender_Summary" style="zoom:67%;" />
+<img src="content/research/DIVVY_Bike_Sharing_2019/Gender_Summary.png" alt="Gender_Summary" style="zoom:67%;" />
 
 73% of subscribers identified themselves as Male, 26% as Female, and rest as neither.
 
@@ -46,7 +46,7 @@ The data has Age Gender information for almost all the subscribers, but for very
 
 
 
-<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\age_rides_summary.png" alt="age_rides_summary" style="zoom:67%;" />
+<img src="content/research/DIVVY_Bike_Sharing_2019/age_rides_summary.png" alt="age_rides_summary" style="zoom:67%;" />
 
 Most riders fell between 20-40years age.
 
@@ -54,11 +54,11 @@ Most riders fell between 20-40years age.
 
 Grouping the data by User Type reveals interesting statistics. The bar graph displays average daily rides, while the pie chart shows percentage of the total rides.
 
-<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\user_type_daily_distribution.png" alt="user_type_daily_distribution" style="zoom:67%;" />
+<img src="content/research/DIVVY_Bike_Sharing_2019/\user_type_daily_distribution.png" alt="user_type_daily_distribution" style="zoom:67%;" />
 
 Subscribers are riding more from Tuesday to Saturday and less on Mondays and Sundays. The result is opposite for customers who use it more frequently on Mondays and Sundays.  
 
-<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\time_day_summary.png" alt="time_day_summary" style="zoom:67%;" />
+<img src="content/research/DIVVY_Bike_Sharing_2019/time_day_summary.png" alt="time_day_summary" style="zoom:67%;" />
 
 Looking at the stacked-area chart, usage pattern during Evening and Night time is same for both the groups. However,  the trends is opposite for the Afternoon and Morning rides. 
 
@@ -66,11 +66,11 @@ Looking at the stacked-area chart, usage pattern during Evening and Night time i
 
 Specific stats about most active bikes, stations, and routes can be very helpful for targeted marketing. Every station serves as both the starting and ending point for a ride, so to find the most active stations, rides starting and ending at each station are aggregated, which are then summed together, giving total rides (Start and End) for all of them. 
 
-<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\top_stations_circplot.png" alt="top_stations_circplot" style="zoom:67%;" />
+<img src="content/research/DIVVY_Bike_Sharing_2019/top_stations_circplot.png" alt="top_stations_circplot" style="zoom:67%;" />
 
 The above circular chart shows 50 most active stations.
 
-<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\top stations comb bar.png" alt="25 Most Active Stations by Subscribers and Customers" style="zoom:67%;" />
+<img src="content/research/DIVVY_Bike_Sharing_2019/top stations comb bar.png" alt="25 Most Active Stations by Subscribers and Customers" style="zoom:67%;" />
 
 25 Most active Stations for Subscribers and Customers are given above.
 
@@ -91,11 +91,11 @@ src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Shari
 
 
 
-<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\Most_Frequent_Routes_by_Subscribers.png" alt="Most Frequent Routes by Subscribers" style="zoom:67%;" />
+<img src="content/research/DIVVY_Bike_Sharing_2019/Most_Frequent_Routes_by_Subscribers.png" alt="Most Frequent Routes by Subscribers" style="zoom:67%;" />
 
 The above plot shows most frequent routes taken by subscribers over the year.
 
-<img src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\Most_Frequent_Routes_by_Customers.png" alt="Most Frequent Routes by Customers" style="zoom:67%;" />
+<img src="content/research/DIVVY_Bike_Sharing_2019/Most_Frequent_Routes_by_Customers.png" alt="Most Frequent Routes by Customers" style="zoom:67%;" />
 
 The above plot shows most frequent routes taken by customers over the year.
 
