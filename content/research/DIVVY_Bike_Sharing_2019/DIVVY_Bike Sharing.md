@@ -1,9 +1,9 @@
+---
+
 title: "Cyclistic bike-share analysis"
-date: 2021-08-19T22:34:46Z
+date: 2021-03-21T22:34:46Z
 draft: false
-tags: [
-    "research","blog",
-]
+---
 
 #Project: Cyclistic bike-share analysis
 ##Year-2019
