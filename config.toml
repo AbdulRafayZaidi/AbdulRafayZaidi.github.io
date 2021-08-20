@@ -15,6 +15,9 @@ favicon = "favicon.png"
 useBlog = true
 lazyloading = true
 
+[markup.goldmark.renderer]
+unsafe = true
+
 
 ## Social media links in footer:
 [Params.Social]
