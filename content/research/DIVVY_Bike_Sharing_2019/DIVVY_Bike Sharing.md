@@ -64,7 +64,7 @@ Grouping the data by User Type reveals interesting statistics. The bar graph dis
 
 ![User Type Distribution](research/DIVVY_Bike_Sharing_2019/user_type_daily_distribution.png)
 
-**Subscribers are riding more from Tuesday to Saturday and less on Mondays and Sundays. The result is opposite for customers who use it more frequently on Mondays and Sundays.  **
+**Subscribers are riding more from Tuesday to Saturday and less on Mondays and Sundays. The result is opposite for customers who use it more frequently on Mondays and Sundays.**
 
 ![Time of Day Summary](research/DIVVY_Bike_Sharing_2019/time_day_summary.png)
 
