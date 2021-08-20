@@ -83,7 +83,7 @@ The data can provide valuable insight into the busiest routes and their connecti
 > edges_200 <- routes_complete%>% 
 > filter(rides>200 & to!=from)
 
-<iframe seamless src="routes_network_plot.html" width="100%" height="500"></iframe>
+<iframe seamless src="network.html" width="100%" height="500"></iframe>
 
 Most active stations, and their routes can be seen in the above network plot. You can Hover over a station to see its name, click on it to highlight the connecting stations.
 
@@ -96,8 +96,6 @@ The above plot shows most frequent routes taken by subscribers over the year.
 
 
 The above plot shows most frequent routes taken by customers over the year.
-
-![]()
 
 
 
