@@ -9,7 +9,7 @@ draft: false
 
 Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime. 
 
-The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers. The most data  used is for year 2019 available here https://divvy-tripdata.s3.amazonaws.com/index.html and divided in four quarters. The data for 1st, 2nd, and 4th quarter is in the same format, however for the 3rd quarter, columns names are different. After right corrections, the dataset is merged.  
+The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers. The data for year 2019 was used for this project, available here https://divvy-tripdata.s3.amazonaws.com/index.html and divided in four quarters. The data for 1st, 2nd, and 4th quarter is in the same format, however for the 3rd quarter, columns names are different. After right corrections, the dataset is merged.  
 
 ## Overview
 
