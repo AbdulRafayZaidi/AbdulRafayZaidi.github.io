@@ -48,8 +48,8 @@ unsafe = true
 #   url  = "/#travel"
 #   weight = 3
 [[menu.main]]
-  name = "Research"
-  url  = "/research"
+  name = "Projects"
+  url  = "/projects"
   weight = 3
 [[menu.main]]
   name = "Blog"
