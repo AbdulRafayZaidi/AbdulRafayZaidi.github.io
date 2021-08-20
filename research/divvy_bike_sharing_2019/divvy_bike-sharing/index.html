@@ -160,7 +160,7 @@ distinct(to_station_id)
 <p>Specific stats about most active bikes, stations, and routes can be very helpful for targeted marketing. Every station serves as both the starting and ending point for a ride, so to find the most active stations, rides starting and ending at each station are aggregated, which are then summed together, giving total rides (Start and End) for all of them.</p>
 <p><img src="top_stations_circplot.png" alt="Most Active Stations"></p>
 <p>The above circular chart shows 50 most active stations.</p>
-<p>![25 Most Active Stations by Subscribers and Customers](top stations comb bar.png)</p>
+<p><img src="top_stations_comb_bar.png" alt="25 Most Active Stations by Subscribers and Customers"></p>
 <p>25 Most active Stations for Subscribers and Customers are given above.</p>
 <h1 id="routes-analysis">Routes Analysis</h1>
 <p>The data can provide valuable insight into the busiest routes and their connectivity. Because there are 617 stations in total, displaying them all would cause unnecessary clutter. To avoid that, only the most active stations, with total annual rides greater than 200 are filtered. Some rides end at the same starting point, which are also filtered out for this analysis. The data is then manipulated for network analysis using VisNetwork on R.</p>
@@ -172,7 +172,7 @@ filter(rides&gt;200 &amp; to!=from)</p>
 <p>Most active stations, and their routes can be seen in the above network plot. You can Hover over a station to see its name, click on it to highlight the connecting stations.</p>
 <p><img src="Most_Frequent_Routes_by_Subscribers.png" alt="Most Frequent Routes by Subscribers"></p>
 <p>The above plot shows most frequent routes taken by subscribers over the year.</p>
-<p><img src="Most_Frequent_Routes_by_Customers.png" alt="Most Frequent Routes by Customers"></p>
+<p><img src="/Most_Frequent_Routes_by_Customers.png" alt="Most Frequent Routes by Customers"></p>
 <p>The above plot shows most frequent routes taken by customers over the year.</p>
 
           </article>
