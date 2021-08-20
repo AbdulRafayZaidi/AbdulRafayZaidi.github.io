@@ -5,16 +5,16 @@ date: 2021-03-21T22:34:46Z
 draft: false
 ---
 
-#Project: Cyclistic bike-share analysis
-##Year-2019
+# Project: Cyclistic bike-share analysis
+## Year-2019
 
-#Introduction
+# Introduction
 
 Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime. 
 
 The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers. The most data  used is for year 2019 available here https://divvy-tripdata.s3.amazonaws.com/index.html and divided in four quarters. The data for 1st, 2nd, and 4th quarter is in the same format, however for the 3rd quarter, columns names are different. After right corrections, the dataset is merged.  
 
-#Overview
+# Overview
 
 Using R, we can take a quick peek of the dataset with following commands. 
 
@@ -50,7 +50,7 @@ The data has Age Gender information for almost all the subscribers, but for very
 
 Most riders fell between 20-40years age.
 
-#Distribution by User Type
+# Distribution by User Type
 
 Grouping the data by User Type reveals interesting statistics. The bar graph displays average daily rides, while the pie chart shows percentage of the total rides.
 
@@ -62,7 +62,7 @@ Subscribers are riding more from Tuesday to Saturday and less on Mondays and Sun
 
 Looking at the stacked-area chart, usage pattern during Evening and Night time is same for both the groups. However,  the trends is opposite for the Afternoon and Morning rides. 
 
-#Leading Statistics
+# Leading Statistics
 
 Specific stats about most active bikes, stations, and routes can be very helpful for targeted marketing. Every station serves as both the starting and ending point for a ride, so to find the most active stations, rides starting and ending at each station are aggregated, which are then summed together, giving total rides (Start and End) for all of them. 
 
@@ -74,18 +74,14 @@ The above circular chart shows 50 most active stations.
 
 25 Most active Stations for Subscribers and Customers are given above.
 
-
-
-##Routes Analysis
+# Routes Analysis
 
 The data can provide valuable insight into the busiest routes and their connectivity. Because there are 617 stations in total, displaying them all would cause unnecessary clutter. To avoid that, only the most active stations, with total annual rides greater than 200 are filtered. Some rides end at the same starting point, which are also filtered out for this analysis. The data is then manipulated for network analysis using VisNetwork on R.
 
 > edges_200 <- routes_complete%>% 
 > filter(rides>200 & to!=from)
 
-```r
-<iframe seamless src="/content/research/DIVVY_Bike_Sharing_2019/network.html" width="100%" height="500"></iframe>
-```
+<iframe seamless src="routes_network_plot.html" width="100%" height="500"></iframe>
 
 Most active stations, and their routes can be seen in the above network plot. You can Hover over a station to see its name, click on it to highlight the connecting stations.
 
