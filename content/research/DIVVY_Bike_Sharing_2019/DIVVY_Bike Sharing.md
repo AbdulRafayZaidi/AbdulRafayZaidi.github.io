@@ -18,29 +18,35 @@ The goal is to understand how both the types of users use the service differentl
 
 Using R, we can take a quick peek of the dataset with following commands. 
 
----
-
+```rst
 dim(Divvy_Trips_2019_full)
 [1] 3818004      12
+```
 
-> colnames(Divvy_Trips_2019_full)
->  [1] "trip_id"           "start_time"        "end_time"          "bikeid"           
->  [5] "tripduration"      "from_station_id"   "from_station_name" "to_station_id"    
->  [9] "to_station_name"   "usertype"          "gender"            "birthyear"  "
+```rst
+colnames(Divvy_Trips_2019_full)
+[1] "trip_id"           "start_time"        "end_time"          "bikeid"           
+[5] "tripduration"      "from_station_id"   "from_station_name" "to_station_id"    
+[9] "to_station_name"   "usertype"          "gender"            "birthyear"
+```
 
-> Divvy_Trips_2019_full %>% 
-> 	distinct(bikeid)
-> #A tibble: 6,017 x 1
+```rst
+Divvy_Trips_2019_full %>% 
+	distinct(bikeid)
+#A tibble: 6,017 x 1
+```
 
-> Divvy_Trips_2019_full %>% 
-> 	distinct(to_station_id)
-> #A tibble: 617 x 1
+```rst
+Divvy_Trips_2019_full %>% 
+	distinct(to_station_id)
+#A tibble: 617 x 1
+```
 
 The combined data has a record 3,818,004 rides, split into 12 columns having Trip ID, Start Time, End Time, Bike ID, Trip Duration, From Station (Starting Point), To Station (End Station), User Type, Gender, and Birthyear. The company has 6,017 bikes and 617 stations.
 
 The data has Age Gender information for almost all the subscribers, but for very few walk in riders, so filtering is done to avoid skewing. 
 
-![Gender Distribution](Gender_Summary.png)
+![Gender Distribution](research/DIVVY_Bike_Sharing_2019/Gender_Summary.png)
 
 73% of subscribers identified themselves as Male, 26% as Female, and rest as neither.
 
@@ -48,7 +54,7 @@ The data has Age Gender information for almost all the subscribers, but for very
 
 
 
-![Gender Group Summary](age_rides_summary.png)
+![Gender Group Summary](research/DIVVY_Bike_Sharing_2019/age_rides_summary.png)
 
 Most riders fell between 20-40years age.
 
@@ -56,11 +62,11 @@ Most riders fell between 20-40years age.
 
 Grouping the data by User Type reveals interesting statistics. The bar graph displays average daily rides, while the pie chart shows percentage of the total rides.
 
-![User Type Distribution](user_type_daily_distribution.png)
+![User Type Distribution](research/DIVVY_Bike_Sharing_2019/user_type_daily_distribution.png)
 
 Subscribers are riding more from Tuesday to Saturday and less on Mondays and Sundays. The result is opposite for customers who use it more frequently on Mondays and Sundays.  
 
-![Time of Day Summary](time_day_summary.png)
+![Time of Day Summary](research/DIVVY_Bike_Sharing_2019/time_day_summary.png)
 
 Looking at the stacked-area chart, usage pattern during Evening and Night time is same for both the groups. However,  the trends is opposite for the Afternoon and Morning rides. 
 
@@ -68,11 +74,11 @@ Looking at the stacked-area chart, usage pattern during Evening and Night time i
 
 Specific stats about most active bikes, stations, and routes can be very helpful for targeted marketing. Every station serves as both the starting and ending point for a ride, so to find the most active stations, rides starting and ending at each station are aggregated, which are then summed together, giving total rides (Start and End) for all of them. 
 
-![Most Active Stations](top_stations_circplot.png)
+![Most Active Stations](research/DIVVY_Bike_Sharing_2019/top_stations_circplot.png)
 
 The above circular chart shows 50 most active stations.
 
-![25 Most Active Stations by Subscribers and Customers](top_stations_comb_bar.png)
+![25 Most Active Stations by Subscribers and Customers](research/DIVVY_Bike_Sharing_2019/top_stations_comb_bar.png)
 
 25 Most active Stations for Subscribers and Customers are given above.
 
@@ -80,18 +86,20 @@ The above circular chart shows 50 most active stations.
 
 The data can provide valuable insight into the busiest routes and their connectivity. Because there are 617 stations in total, displaying them all would cause unnecessary clutter. To avoid that, only the most active stations, with total annual rides greater than 200 are filtered. Some rides end at the same starting point, which are also filtered out for this analysis. The data is then manipulated for network analysis using VisNetwork on R.
 
-> edges_200 <- routes_complete%>% 
-> filter(rides>200 & to!=from)
+```rst
+edges_200 <- routes_complete%>% 
+filter(rides>200 & to!=from)
+```
 
-<iframe seamless src="network.html" width="100%" height="500"></iframe>
+<iframe seamless src="research/DIVVY_Bike_Sharing_2019/network.html" width="100%" height="700"></iframe>
 
 Most active stations, and their routes can be seen in the above network plot. You can Hover over a station to see its name, click on it to highlight the connecting stations.
 
-![Most Frequent Routes by Subscribers](Most_Frequent_Routes_by_Subscribers.png) 
+![Most Frequent Routes by Subscribers](research/DIVVY_Bike_Sharing_2019/Most_Frequent_Routes_by_Subscribers.png) 
 
 The above plot shows most frequent routes taken by subscribers over the year.
 
-![Most Frequent Routes by Customers](/Most_Frequent_Routes_by_Customers.png)
+![Most Frequent Routes by Customers](research/DIVVY_Bike_Sharing_2019/Most_Frequent_Routes_by_Customers.png)
 
 
 
