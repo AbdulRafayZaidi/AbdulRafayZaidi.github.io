@@ -81,15 +81,13 @@ The above circular chart shows 50 most active stations.
 The data can provide valuable insight into the busiest routes and their connectivity. Because there are 617 stations in total, displaying them all would cause unnecessary clutter. To avoid that, only the most active stations, with total annual rides greater than 200 are filtered. Some rides end at the same starting point, which are also filtered out for this analysis. The data is then manipulated for network analysis using VisNetwork on R.
 
 > edges_200 <- routes_complete%>% 
->   filter(rides>200 & to!=from)
+> filter(rides>200 & to!=from)
 
-<html
-src="P:\arzaidi_blog\AbdulRafayZaidi.github.io\content\research\DIVVY_Bike_Sharing_2019\routes_network_plot.html"
-/>
+```r
+<iframe seamless src="/content/research/DIVVY_Bike_Sharing_2019/routes_network_plot.html" width="100%" height="500"></iframe>
+```
 
-
-
-
+Most active stations, and their routes can be seen in the above network plot. You can Hover over a station to see its name, click on it to highlight the connecting stations.
 
 <img src="/content/research/DIVVY_Bike_Sharing_2019/Most_Frequent_Routes_by_Subscribers.png" alt="Most Frequent Routes by Subscribers" style="zoom:67%;" />
 
