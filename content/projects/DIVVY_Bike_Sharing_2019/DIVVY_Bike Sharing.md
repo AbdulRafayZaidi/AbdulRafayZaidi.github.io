@@ -1,7 +1,7 @@
 ---
 
 title: "Cyclistic bike-share analysis"
-date: 2021-08-21T22:34:46Z
+date: 2021-03-21T22:34:46Z
 draft: false
 ---
 
