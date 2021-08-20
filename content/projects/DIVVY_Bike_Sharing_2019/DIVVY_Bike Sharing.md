@@ -7,7 +7,9 @@ draft: false
 
 # Cyclistic bike-share analysis 
 
-#### Year-2019
+### Year-2019
+
+
 
 ## Introduction
 
@@ -109,4 +111,8 @@ Most active stations, and their routes can be seen in the above network plot. Yo
 ## Conclusion
 
 The above analysis has revealed very useful statistics that can help marketing team launch a successful media campaign. By focusing on the specific stations, which are broadly connected and have a high number of casual customers, or by offering special discounts on specific routes to the subscribers, or by offering special referrals in particular areas, the company can gain high conversion.
+
+
+
+***Author: Syed Abdul Rafay***
 
