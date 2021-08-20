@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Researches on Abdul Rafay</title>
-    <link>https://syedabdulrafay.com/research/</link>
-    <description>Recent content in Researches on Abdul Rafay</description>
+    <title>Projects on Abdul Rafay</title>
+    <link>https://syedabdulrafay.com/projects/</link>
+    <description>Recent content in Projects on Abdul Rafay</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Mar 2021 22:34:46 +0000</lastBuildDate><atom:link href="https://syedabdulrafay.com/research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Mar 2021 22:34:46 +0000</lastBuildDate><atom:link href="https://syedabdulrafay.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cyclistic bike-share analysis</title>
-      <link>https://syedabdulrafay.com/research/divvy_bike_sharing_2019/divvy_bike-sharing/</link>
+      <link>https://syedabdulrafay.com/projects/divvy_bike_sharing_2019/divvy_bike-sharing/</link>
       <pubDate>Sun, 21 Mar 2021 22:34:46 +0000</pubDate>
       
-      <guid>https://syedabdulrafay.com/research/divvy_bike_sharing_2019/divvy_bike-sharing/</guid>
+      <guid>https://syedabdulrafay.com/projects/divvy_bike_sharing_2019/divvy_bike-sharing/</guid>
       <description>Project: Cyclistic bike-share analysis (2019) Introduction Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.
 The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers.</description>
     </item>
