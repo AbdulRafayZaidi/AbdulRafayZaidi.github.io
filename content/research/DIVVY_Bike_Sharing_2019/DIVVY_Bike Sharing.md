@@ -68,7 +68,7 @@ Grouping the data by User Type reveals interesting statistics. The bar graph dis
 
 ![Time of Day Summary](research/DIVVY_Bike_Sharing_2019/time_day_summary.png)
 
-**Looking at the stacked-area chart, usage pattern during Evening and Night time is same for both the groups. However,  the trends is opposite for the Afternoon and Morning rides. **
+**Looking at the stacked-area chart, usage pattern during Evening and Night time is same for both the groups. However,  the trends is opposite for the Afternoon and Morning rides.**
 
 ## Leading Statistics
 
