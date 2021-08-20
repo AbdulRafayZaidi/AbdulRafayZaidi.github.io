@@ -84,7 +84,7 @@ The data can provide valuable insight into the busiest routes and their connecti
 > filter(rides>200 & to!=from)
 
 ```r
-<iframe seamless src="/content/research/DIVVY_Bike_Sharing_2019/routes_network_plot.html" width="100%" height="500"></iframe>
+<iframe seamless src="/content/research/DIVVY_Bike_Sharing_2019/network.html" width="100%" height="500"></iframe>
 ```
 
 Most active stations, and their routes can be seen in the above network plot. You can Hover over a station to see its name, click on it to highlight the connecting stations.
