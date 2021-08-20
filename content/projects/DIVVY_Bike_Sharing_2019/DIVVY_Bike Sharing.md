@@ -1,15 +1,9 @@
 ---
 
-title: "Cyclistic bike-share analysis"
+title: "Cyclistic Data analysis"
 date: 2021-03-21T22:34:46Z
 draft: false
 ---
-
-# Cyclistic bike-share analysis 
-
-### Year-2019
-
-
 
 ## Introduction
 
