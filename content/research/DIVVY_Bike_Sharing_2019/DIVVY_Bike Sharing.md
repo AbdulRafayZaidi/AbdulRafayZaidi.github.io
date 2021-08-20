@@ -72,7 +72,7 @@ Specific stats about most active bikes, stations, and routes can be very helpful
 
 The above circular chart shows 50 most active stations.
 
-![25 Most Active Stations by Subscribers and Customers](top stations comb bar.png)
+![25 Most Active Stations by Subscribers and Customers](top_stations_comb_bar.png)
 
 25 Most active Stations for Subscribers and Customers are given above.
 
@@ -91,7 +91,7 @@ Most active stations, and their routes can be seen in the above network plot. Yo
 
 The above plot shows most frequent routes taken by subscribers over the year.
 
-![Most Frequent Routes by Customers](Most_Frequent_Routes_by_Customers.png)
+![Most Frequent Routes by Customers](/Most_Frequent_Routes_by_Customers.png)
 
 
 
