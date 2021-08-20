@@ -46,7 +46,7 @@ Divvy_Trips_2019_full %>%
 
 The data has Age Gender information for almost all the subscribers, but for very few walk in riders, so filtering is done to avoid skewing. 
 
-![Gender Distribution](research/DIVVY_Bike_Sharing_2019/Gender_Summary.png)
+![Gender Distribution](projects/DIVVY_Bike_Sharing_2019/Gender_Summary.png)
 
 **73% of subscribers identified themselves as Male, 26% as Female, and rest as neither.**
 
@@ -54,7 +54,7 @@ The data has Age Gender information for almost all the subscribers, but for very
 
 
 
-![Gender Group Summary](research/DIVVY_Bike_Sharing_2019/age_rides_summary.png)
+![Gender Group Summary](projects/DIVVY_Bike_Sharing_2019/age_rides_summary.png)
 
 **Most riders fell between 20-40years age.**
 
@@ -62,11 +62,11 @@ The data has Age Gender information for almost all the subscribers, but for very
 
 Grouping the data by User Type reveals interesting statistics. The bar graph displays average daily rides, while the pie chart shows percentage of the total rides.
 
-![User Type Distribution](research/DIVVY_Bike_Sharing_2019/user_type_daily_distribution.png)
+![User Type Distribution](projects/DIVVY_Bike_Sharing_2019/user_type_daily_distribution.png)
 
 **Subscribers are riding more from Tuesday to Saturday and less on Mondays and Sundays. The result is opposite for customers who use it more frequently on Mondays and Sundays.**
 
-![Time of Day Summary](research/DIVVY_Bike_Sharing_2019/time_day_summary.png)
+![Time of Day Summary](projects/DIVVY_Bike_Sharing_2019/time_day_summary.png)
 
 **Looking at the stacked-area chart, usage pattern during Evening and Night time is same for both the groups. However,  the trends is opposite for the Afternoon and Morning rides.**
 
@@ -74,11 +74,11 @@ Grouping the data by User Type reveals interesting statistics. The bar graph dis
 
 Specific stats about most active bikes, stations, and routes can be very helpful for targeted marketing. Every station serves as both the starting and ending point for a ride, so to find the most active stations, rides starting and ending at each station are aggregated, which are then summed together, giving total rides (Start and End) for all of them. 
 
-![Most Active Stations](research/DIVVY_Bike_Sharing_2019/top_stations_circplot.png)
+![Most Active Stations](projects/DIVVY_Bike_Sharing_2019/top_stations_circplot.png)
 
 **The above circular chart shows 50 most active stations.**
 
-![25 Most Active Stations by Subscribers and Customers](research/DIVVY_Bike_Sharing_2019/top_stations_comb_bar.png)
+![25 Most Active Stations by Subscribers and Customers](projects/DIVVY_Bike_Sharing_2019/top_stations_comb_bar.png)
 
 **25 Most active Stations for Subscribers and Customers are given above.**
 
@@ -91,15 +91,15 @@ edges_200 <- routes_complete%>%
 filter(rides>200 & to!=from)
 ```
 
-<iframe seamless src="research/DIVVY_Bike_Sharing_2019/network.html" width="100%" height="700"></iframe>
+<iframe seamless src="projects/DIVVY_Bike_Sharing_2019/network.html" width="100%" height="700"></iframe>
 
 Most active stations, and their routes can be seen in the above network plot. You can Hover over a station to see its name, click on it to highlight the connecting stations.
 
-![Most Frequent Routes by Subscribers](research/DIVVY_Bike_Sharing_2019/Most_Frequent_Routes_by_Subscribers.png) 
+![Most Frequent Routes by Subscribers](projects/DIVVY_Bike_Sharing_2019/Most_Frequent_Routes_by_Subscribers.png) 
 
 **The above plot shows most frequent routes taken by subscribers over the year.**
 
-![Most Frequent Routes by Customers](research/DIVVY_Bike_Sharing_2019/Most_Frequent_Routes_by_Customers.png)
+![Most Frequent Routes by Customers](projects/DIVVY_Bike_Sharing_2019/Most_Frequent_Routes_by_Customers.png)
 
 **The above plot shows most frequent routes taken by customers over the year.**
 
