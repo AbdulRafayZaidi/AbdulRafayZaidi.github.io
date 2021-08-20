@@ -1,11 +1,14 @@
 ---
 
 title: "Cyclistic bike-share analysis"
-date: 2021-03-21T22:34:46Z
+date: 2021-08-21T22:34:46Z
 draft: false
 ---
 
-# Project: Cyclistic bike-share analysis (2019)
+# Cyclistic bike-share analysis 
+
+#### Year-2019
+
 ## Introduction
 
 Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime. 
