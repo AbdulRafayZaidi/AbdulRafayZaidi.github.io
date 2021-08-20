@@ -1,5 +1,5 @@
-title: "Project: Cyclistic bike-share analysis"
-date: 2021-08-19
+title: "Cyclistic bike-share analysis"
+date: 2021-08-19T22:34:46Z
 draft: false
 tags: [
     "research","blog",
