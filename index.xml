@@ -8,6 +8,18 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Mar 2021 22:34:46 +0000</lastBuildDate><atom:link href="https://syedabdulrafay.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cyclistic bike-share analysis</title>
+      <link>https://syedabdulrafay.com/research/divvy_bike_sharing_2019/divvy_bike-sharing/</link>
+      <pubDate>Sun, 21 Mar 2021 22:34:46 +0000</pubDate>
+      
+      <guid>https://syedabdulrafay.com/research/divvy_bike_sharing_2019/divvy_bike-sharing/</guid>
+      <description>#Project: Cyclistic bike-share analysis ##Year-2019
+#Introduction
+Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.
+The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers.</description>
+    </item>
+    
+    <item>
       <title>Three Trials</title>
       <link>https://syedabdulrafay.com/story/three-trials/</link>
       <pubDate>Sun, 21 Mar 2021 22:34:46 +0000</pubDate>
@@ -150,19 +162,6 @@ But man’s greed for more has gone too far. His destructive hands have mutilate
       <guid>https://syedabdulrafay.com/about/summary/</guid>
       <description>A Writer, Traveler, and Climate Researcher. I am fond of exploring distant lands, mountain tops, and forests, the unseen where nobody walks. It brings me close to my roots, connecting me to the mother earth, the origin of all life. So I keep looking for ways to pay respects to life.
 Being a professional engineer, I have become more conscious of my own environmental impacts. My workplace mainly dealt with plastic products, so I had to find something new, a job that wasn’t a part of the problem, a place that took responsibility.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://syedabdulrafay.com/research/divvy_bike_sharing_2019/divvy_bike-sharing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://syedabdulrafay.com/research/divvy_bike_sharing_2019/divvy_bike-sharing/</guid>
-      <description>title: &amp;ldquo;Cyclistic bike-share analysis&amp;rdquo; date: 2021-08-19T22:34:46Z draft: false tags: [ &amp;ldquo;research&amp;rdquo;,&amp;ldquo;blog&amp;rdquo;, ]
-#Project: Cyclistic bike-share analysis ##Year-2019
-#Introduction
-Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.
-The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers.</description>
     </item>
     
   </channel>
