@@ -18,8 +18,10 @@ The goal is to understand how both the types of users use the service differentl
 
 Using R, we can take a quick peek of the dataset with following commands. 
 
-> dim(Divvy_Trips_2019_full)
-> [1] 3818004      12
+---
+
+dim(Divvy_Trips_2019_full)
+[1] 3818004      12
 
 > colnames(Divvy_Trips_2019_full)
 >  [1] "trip_id"           "start_time"        "end_time"          "bikeid"           
@@ -54,11 +56,11 @@ Most riders fell between 20-40years age.
 
 Grouping the data by User Type reveals interesting statistics. The bar graph displays average daily rides, while the pie chart shows percentage of the total rides.
 
-<img src="/user_type_daily_distribution.png" alt="user_type_daily_distribution" style="zoom:67%;" />
+![User Type Distribution](user_type_daily_distribution.png)
 
 Subscribers are riding more from Tuesday to Saturday and less on Mondays and Sundays. The result is opposite for customers who use it more frequently on Mondays and Sundays.  
 
-<img src="/time_day_summary.png" alt="time_day_summary" style="zoom:67%;" />
+![Time of Day Summary](time_day_summary.png)
 
 Looking at the stacked-area chart, usage pattern during Evening and Night time is same for both the groups. However,  the trends is opposite for the Afternoon and Morning rides. 
 
@@ -66,11 +68,11 @@ Looking at the stacked-area chart, usage pattern during Evening and Night time i
 
 Specific stats about most active bikes, stations, and routes can be very helpful for targeted marketing. Every station serves as both the starting and ending point for a ride, so to find the most active stations, rides starting and ending at each station are aggregated, which are then summed together, giving total rides (Start and End) for all of them. 
 
-<img src="/top_stations_circplot.png" alt="top_stations_circplot" style="zoom:67%;" />
+![Most Active Stations](top_stations_circplot.png)
 
 The above circular chart shows 50 most active stations.
 
-<img src="/top stations comb bar.png" alt="25 Most Active Stations by Subscribers and Customers" style="zoom:67%;" />
+![25 Most Active Stations by Subscribers and Customers](top stations comb bar.png)
 
 25 Most active Stations for Subscribers and Customers are given above.
 
@@ -85,11 +87,17 @@ The data can provide valuable insight into the busiest routes and their connecti
 
 Most active stations, and their routes can be seen in the above network plot. You can Hover over a station to see its name, click on it to highlight the connecting stations.
 
-<img src="Most_Frequent_Routes_by_Subscribers.png" alt="Most Frequent Routes by Subscribers" style="zoom:67%;" />
+![Most Frequent Routes by Subscribers](Most_Frequent_Routes_by_Subscribers.png) 
 
 The above plot shows most frequent routes taken by subscribers over the year.
 
-<img src="Most_Frequent_Routes_by_Customers.png" alt="Most Frequent Routes by Customers" style="zoom:67%;" />
+![Most Frequent Routes by Customers](Most_Frequent_Routes_by_Customers.png)
+
+
 
 The above plot shows most frequent routes taken by customers over the year.
+
+![]()
+
+
 
