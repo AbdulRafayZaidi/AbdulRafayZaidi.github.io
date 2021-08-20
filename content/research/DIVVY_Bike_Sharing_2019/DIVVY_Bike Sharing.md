@@ -40,7 +40,7 @@ The combined data has a record 3,818,004 rides, split into 12 columns having Tri
 
 The data has Age Gender information for almost all the subscribers, but for very few walk in riders, so filtering is done to avoid skewing. 
 
-<img src="/Gender_Summary.png" alt="Gender_Summary" style="zoom:67%;" />
+![Gender Distribution](Gender_Summary.png)
 
 73% of subscribers identified themselves as Male, 26% as Female, and rest as neither.
 
@@ -48,7 +48,7 @@ The data has Age Gender information for almost all the subscribers, but for very
 
 
 
-<img src="/age_rides_summary.png" alt="age_rides_summary" style="zoom:67%;" />
+![Gender Group Summary](age_rides_summary.png)
 
 Most riders fell between 20-40years age.
 
