@@ -59,9 +59,13 @@ Long/Lat values for the stations are not given separately and  are included in t
 
 
 
-<iframe seamless src="projects/Bike_Sharing_2020/map.html" width="100%" height="700"></iframe>
+<iframe seamless src="projects/Bike_Sharing_2020/leafMap.html" width="100%" height="700"></iframe>
 
-Most active stations, and their routes can be seen in the above network plot. You can Hover over a station to see its name, click on it to highlight the connecting stations.
+ In the above map, the size of each circle represents the scale of activity at that station. The map shows cluster of large circles, highly active stations dominated with subscribers and smaller circles, moderately active stations where majority users are casual customers, on its periphery.
+
+Inside the cluster of green stations, a few large stations pop out in red. By tapping on those stations, it can be seen that they have fairly high number of rides, but very few of them are subscribers.
+
+The company could target these particular stations for future marketing campaigns.
 
 
 
