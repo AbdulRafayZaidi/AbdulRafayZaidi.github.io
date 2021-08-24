@@ -7,10 +7,10 @@
 
   <title>
     
-    Cyclistic Data analysis | Abdul Rafay
+    Geo-mapping Cyclistic Data | Abdul Rafay
   </title>
 
-  <meta name="title" content="Cyclistic Data analysis | Abdul Rafay">
+  <meta name="title" content="Geo-mapping Cyclistic Data | Abdul Rafay">
 
   <meta charset="utf-8">
   
@@ -21,20 +21,22 @@
   <base href="https://syedabdulrafay.com/">
 
   <meta name="description" content="Introduction Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.
-The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers. The data for year 2019 was used for this project, available here https://divvy-tripdata.">
+The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers.
+Previously, data for year 2019 was analyzed.">
 
   
 
   
 
-  <meta property="og:title" content="Cyclistic Data analysis | Abdul Rafay">
+  <meta property="og:title" content="Geo-mapping Cyclistic Data | Abdul Rafay">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://syedabdulrafay.com/">
 
   
 
   <meta name="og:description" content="Introduction Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.
-The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers. The data for year 2019 was used for this project, available here https://divvy-tripdata.">
+The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers.
+Previously, data for year 2019 was analyzed.">
 
   <link rel="icon" type="image/png" href="favicon.png">
 
@@ -111,7 +113,7 @@ The goal is to understand how both the types of users use the service differentl
 
       <section class="container">
         <section class="content">
-          <h1> Cyclistic Data analysis </h1>
+          <h1> Geo-mapping Cyclistic Data </h1>
 
             <div class="sub-header">
               March 21, 2021 · 3 minutes read
@@ -120,7 +122,10 @@ The goal is to understand how both the types of users use the service differentl
           <article class="entry-content">
             <h2 id="introduction">Introduction</h2>
 <p>Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.</p>
-<p>The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers. The data for year 2019 was used for this project, available here <a href="https://divvy-tripdata.s3.amazonaws.com/index.html">https://divvy-tripdata.s3.amazonaws.com/index.html</a> and divided in four quarters. The data for 1st, 2nd, and 4th quarter is in the same format, however for the 3rd quarter, columns names are different. After right corrections, the dataset is merged.</p>
+<p>The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers.</p>
+<p>Previously, data for year 2019 was analyzed. The older datasets don&rsquo;t have values for longitude and latitude. To map the statistics, data from year 2020 is used that contains the geo-locations for the bike stations.</p>
+<p>All the data is available here <a href="https://divvy-tripdata.s3.amazonaws.com/index.html">https://divvy-tripdata.s3.amazonaws.com/index.html</a>.</p>
+<p>Naming convention is different for year 2020 and 2019, so for consistency, the variables for present data are renamed.</p>
 <h2 id="overview">Overview</h2>
 <p>Using R, we can take a quick peek of the dataset with following commands.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rst" data-lang="rst">dim(Divvy_Trips_2019_full)<span style="color:#960050;background-color:#1e0010">
@@ -136,34 +141,12 @@ The goal is to understand how both the types of users use the service differentl
 </span><span style="color:#960050;background-color:#1e0010"></span>	distinct(to_station_id)<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>#A tibble: 617 x 1<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>The combined data has a record 3,818,004 rides, split into 12 columns having Trip ID, Start Time, End Time, Bike ID, Trip Duration, From Station (Starting Point), To Station (End Station), User Type, Gender, and Birthyear. The company has 6,017 bikes and 617 stations.</strong></p>
-<h2 id="demographics">Demographics</h2>
-<p>The data has Age Gender information for almost all the subscribers, but for very few walk in riders, so filtering is done to avoid skewing.</p>
-<p><img src="projects/DIVVY_Bike_Sharing_2019/Gender_Summary.png" alt="Gender Distribution"></p>
-<p><strong>73% of subscribers identified themselves as Male, 26% as Female, and rest as neither.</strong></p>
-<p><img src="projects/DIVVY_Bike_Sharing_2019/age_rides_summary.png" alt="Gender Group Summary"></p>
-<p><strong>Most riders fell between 20-40years age.</strong></p>
-<h2 id="distribution-by-user-type">Distribution by User Type</h2>
-<p>Grouping the data by User Type reveals interesting statistics. The bar graph displays average daily rides, while the pie chart shows percentage of the total rides.</p>
-<p><img src="projects/DIVVY_Bike_Sharing_2019/user_type_daily_distribution.png" alt="User Type Distribution"></p>
-<p><strong>Subscribers are riding more from Tuesday to Saturday and less on Mondays and Sundays. The result is opposite for customers who use it more frequently on Mondays and Sundays.</strong></p>
-<p><img src="projects/DIVVY_Bike_Sharing_2019/time_day_summary.png" alt="Time of Day Summary"></p>
-<p><strong>Looking at the stacked-area chart, usage pattern during Evening and Night time is same for both the groups. However,  the trends is opposite for the Afternoon and Morning rides.</strong></p>
-<h2 id="leading-statistics">Leading Statistics</h2>
-<p>Specific stats about most active bikes, stations, and routes can be very helpful for targeted marketing. Every station serves as both the starting and ending point for a ride, so to find the most active stations, rides starting and ending at each station are aggregated, which are then summed together, giving total rides (Start and End) for all of them.</p>
-<p><img src="projects/DIVVY_Bike_Sharing_2019/top_stations_circplot.png" alt="Most Active Stations"></p>
-<p><strong>The above circular chart shows 50 most active stations.</strong></p>
-<p><img src="projects/DIVVY_Bike_Sharing_2019/top_stations_comb_bar.png" alt="25 Most Active Stations by Subscribers and Customers"></p>
-<p><strong>25 Most active Stations for Subscribers and Customers are given above.</strong></p>
-<h2 id="routes-analysis">Routes Analysis</h2>
-<p>The data can provide valuable insight into the busiest routes and their connectivity. Because there are 617 stations in total, displaying them all would cause unnecessary clutter. To avoid that, only the most active stations, with total annual rides greater than 200 are filtered. Some rides end at the same starting point, which are also filtered out for this analysis. The data is then manipulated for network analysis using VisNetwork on R.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rst" data-lang="rst">edges_200 &lt;- routes_complete%&gt;% <span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>filter(rides&gt;200 &amp; to!=from)<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><iframe seamless src="projects/DIVVY_Bike_Sharing_2019/network.html" width="100%" height="700"></iframe>
+<h2 id="mapping-the-data">Mapping the Data</h2>
+<p>Each station can serve as both the starting and ending point for a ride. To get a holistic picture of complete activity at every station, all the rides at a station, either starting or ending, need to be accounted for.  In the original data, rides taken by subscribers and customers are listed with a start and end point. Since each ride registers activity at two stations, the data is split into two subsets, one with the starting stations and other with ending stations.</p>
+<p>All rides at each station are aggregated separately and then summed up,  giving total rides (both starting and ending) at all stations.</p>
+<p>Long/Lat values for the stations are not given separately and  are included in the same row as each ride&rsquo;s information along with the station name. Since each bike has its own gps device, there is slight variance in long/lat values of every station. Since each station must have a unique geo-location, mean value is used for mapping.</p>
+<iframe seamless src="projects/Bike_Sharing_2020/map.html" width="100%" height="700"></iframe>
 <p>Most active stations, and their routes can be seen in the above network plot. You can Hover over a station to see its name, click on it to highlight the connecting stations.</p>
-<p><img src="projects/DIVVY_Bike_Sharing_2019/Most_Frequent_Routes_by_Subscribers.png" alt="Most Frequent Routes by Subscribers"></p>
-<p><strong>The above plot shows most frequent routes taken by subscribers over the year.</strong></p>
-<p><img src="projects/DIVVY_Bike_Sharing_2019/Most_Frequent_Routes_by_Customers.png" alt="Most Frequent Routes by Customers"></p>
-<p><strong>The above plot shows most frequent routes taken by customers over the year.</strong></p>
 <h2 id="conclusion">Conclusion</h2>
 <p>The above analysis has revealed very useful statistics that can help marketing team launch a successful media campaign. By focusing on the specific stations, which are broadly connected and have a high number of casual customers, or by offering special discounts on specific routes to the subscribers, or by offering special referrals in particular areas, the company can gain high conversion.</p>
 <p><em><strong>Author: Syed Abdul Rafay</strong></em></p>
@@ -172,8 +155,8 @@ The goal is to understand how both the types of users use the service differentl
 
           <div class="pagination">
             
-              <a href="https://syedabdulrafay.com/projects/divvy_bike_sharing_2019/divvy_bike-sharing/">&laquo; Cyclistic Data analysis</a>
             
+              <a href="https://syedabdulrafay.com/projects/divvy_bike_sharing_2019/divvy_bike-sharing/">Cyclistic Data analysis &raquo;</a>
             
           </div>
         </section>
