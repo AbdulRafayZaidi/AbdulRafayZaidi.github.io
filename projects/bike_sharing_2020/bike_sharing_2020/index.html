@@ -145,8 +145,10 @@ Previously, data for year 2019 was analyzed.">
 <p>Each station can serve as both the starting and ending point for a ride. To get a holistic picture of complete activity at every station, all the rides at a station, either starting or ending, need to be accounted for.  In the original data, rides taken by subscribers and customers are listed with a start and end point. Since each ride registers activity at two stations, the data is split into two subsets, one with the starting stations and other with ending stations.</p>
 <p>All rides at each station are aggregated separately and then summed up,  giving total rides (both starting and ending) at all stations.</p>
 <p>Long/Lat values for the stations are not given separately and  are included in the same row as each ride&rsquo;s information along with the station name. Since each bike has its own gps device, there is slight variance in long/lat values of every station. Since each station must have a unique geo-location, mean value is used for mapping.</p>
-<iframe seamless src="projects/Bike_Sharing_2020/map.html" width="100%" height="700"></iframe>
-<p>Most active stations, and their routes can be seen in the above network plot. You can Hover over a station to see its name, click on it to highlight the connecting stations.</p>
+<iframe seamless src="projects/Bike_Sharing_2020/leafMap.html" width="100%" height="700"></iframe>
+<p>In the above map, the size of each circle represents the scale of activity at that station. The map shows cluster of large circles, highly active stations dominated with subscribers and smaller circles, moderately active stations where majority users are casual customers, on its periphery.</p>
+<p>Inside the cluster of green stations, a few large stations pop out in red. By tapping on those stations, it can be seen that they have fairly high number of rides, but very few of them are subscribers.</p>
+<p>The company could target these particular stations for future marketing campaigns.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>The above analysis has revealed very useful statistics that can help marketing team launch a successful media campaign. By focusing on the specific stations, which are broadly connected and have a high number of casual customers, or by offering special discounts on specific routes to the subscribers, or by offering special referrals in particular areas, the company can gain high conversion.</p>
 <p><em><strong>Author: Syed Abdul Rafay</strong></em></p>
