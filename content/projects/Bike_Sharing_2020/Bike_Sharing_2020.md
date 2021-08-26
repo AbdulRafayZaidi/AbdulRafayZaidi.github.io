@@ -51,6 +51,41 @@ Divvy_Trips_2019_full %>%
 
 ## Mapping the Data
 
+Bike stations in this dataset can be mapped to see if there is anything out of ordinary with any station, and how the user activity might be related to the locations.
+
+### Cluster Map
+
+First thing I did is to visualize the clusters--hotspots where most of the activity takes place.
+
+<iframe seamless src="projects/Bike_Sharing_2020/cluster_map.html" width="100%" height="700"></iframe>
+
+Most of the stations are located to the center-right, while on the periphery, the density decreases. Hovering over the stations, you can read their labels.
+
+### Connectivity Map
+
+From the above visualization, it is clear that some stations are more connected than the rest. People are traveling from all over the city to the stations to the center-right. While fewer people are moving between the stations on the periphery. 
+This is visualized as under. To reduce the clutter, only top three routes (destination points accessed from a station) are displayed. 
+
+<iframe seamless src="projects/Bike_Sharing_2020/connectivity_map.html" width="100%" height="700"></iframe>
+
+In the above map, some very good information is revealed
+
+##### Some stations on the periphery, are not connected to any other station.
+
+If we tap on those stations, we would see that their only destination is themselves, meaning that users in those neighborhood take the bike for short-travel in the area and park it back to the origin once their chores are done.
+
+##### One station inside the center-cluster is connected to only two other stations, popping out as a small pink dot.
+
+The two stations titled **HQ QR** and **HUBBARD ST BIKE CHECKING (LBS-WH-TEST)** are probably the company's headquarter, as the further analysis reveals only one way flow of bikes.
+
+##### Stations to the right, near the coast, have the most connectivity.
+
+Station called **Streeter Dr & Grand Ave** is the most connected station, and lies at the coast near *Milton Lee Olive Park*. People travel to more than 450 destinations across the city from this point. 
+
+
+
+### User Distribution Map
+
 Each station can serve as both the starting and ending point for a ride. To get a holistic picture of complete activity at every station, all the rides at a station, either starting or ending, need to be accounted for.  In the original data, rides taken by subscribers and customers are listed with a start and end point. Since each ride registers activity at two stations, the data is split into two subsets, one with the starting stations and other with ending stations.
 
 All rides at each station are aggregated separately and then summed up,  giving total rides (both starting and ending) at all stations.
