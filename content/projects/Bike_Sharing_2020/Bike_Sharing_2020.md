@@ -89,7 +89,9 @@ In the above map, some very useful information is revealed:
 
 ***The origin station is also the top destination for many stations***
 
-* Inside the popup window for many of the stations, its name is also listed as the top destination. Analyzing the data reveals that in fact most frequent routes are those that end on themselves, suggesting that users in those neighborhoods frequently use the service for short nearby traveling.  
+* Inside the popup window for many of the stations, its name is also listed as the top destination. Analyzing the data reveals that in fact most frequent routes are those that end on themselves, suggesting that users in those neighborhoods frequently use the service for short nearby traveling. To further establish this hypothesis, we return to our original data and analyze it further. 
+  * Out of *3 million* rides  *356 thousand* started and ended at the same station, making them **10%** of all the rides taken.
+  * Average time for these rides is **49 minutes**.
 
 ### User Distribution Map
 
