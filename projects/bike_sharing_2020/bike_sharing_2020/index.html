@@ -116,7 +116,7 @@ Previously, data for year 2019 was analyzed.">
           <h1> Geo-mapping Cyclistic Data </h1>
 
             <div class="sub-header">
-              March 21, 2021 · 5 minutes read
+              March 21, 2021 · 6 minutes read
             </div>
 
           <article class="entry-content">
@@ -170,7 +170,7 @@ This is visualized as under. To reduce the clutter, only top three routes (desti
 <ul>
 <li>Inside the popup window for many of the stations, its name is also listed as the top destination. Analyzing the data reveals that in fact most frequent routes are those that end on themselves, suggesting that users in those neighborhoods frequently use the service for short nearby traveling. To further establish this hypothesis, we return to our original data and analyze it further.
 <ul>
-<li>Out of <em>3 million</em> rides  <em>356 thousand</em> started and ended at the same station, making them <strong>10%</strong> of all the rides taken.</li>
+<li>Out of <em>3.3 million</em> rides  <em>356 thousand</em> started and ended at the same station, making them <strong>10%</strong> of all the rides taken.</li>
 <li>Average time for these rides is <strong>49 minutes</strong>.</li>
 </ul>
 </li>
@@ -178,11 +178,33 @@ This is visualized as under. To reduce the clutter, only top three routes (desti
 <h3 id="user-distribution-map">User Distribution Map</h3>
 <p>Now that we understand overall activity at bike stations, we need to estimate the numbers of <strong>Subscribers</strong> and <strong>Customers</strong> at all stations, to taget appropriate marketing campaigns.
 Each station can serve as both the starting and ending point for a ride. To get a holistic picture of complete activity at every station, all the rides at a station, either starting or ending, need to be accounted for.  In the original data, rides taken by subscribers and customers are listed with a start and end point. The rides at each station are aggregated separately and then summed up,  giving total rides (both starting and ending) at every station.</p>
-<p>The size of a circle represents the magnitude of activity at that station, and its color the type of most users.</p>
+<p>The size of a circle represents the magnitude of activity at that station, and its color the type of its majority users.</p>
 <iframe seamless src="projects/Bike_Sharing_2020/leafMap.html" width="100%" height="700"></iframe>
 <p><em>You can zoom in and tap on the stations to read their details.</em></p>
 <p>The map shows cluster of large circles, highly active stations dominated with subscribers and smaller circles, moderately active stations where majority users are casual customers, on its periphery.</p>
-<p>Inside the cluster of green stations, a few large stations pop out in red. By tapping on those stations, it can be seen that they have fairly high number of rides, but very few of them are subscribers.</p>
+<p>Sniffing the above map, we find some insightful points:</p>
+<p><strong>A big green blob in the center</strong></p>
+<ul>
+<li>This is the part dominated with subscribers, with a number of stations having more than <strong>70%</strong> Subscribers, represented in deep green circles.</li>
+</ul>
+<p><strong>Two small circles in red, pop out near the central cluster</strong></p>
+<ul>
+<li>Two stations titled <strong>HQ QR</strong> and <strong>HUBBARD ST BIKE CHECKING (LBS-WH-TEST)</strong>, although surrounded with a lot of Subscribers type stations,  have majority user type listed as Customers. These stations, as explained in our <em>Connectivity Map</em> above, are only connected amongst themselves and are likely the company&rsquo;s own facilities, causing this apparent deviation.</li>
+</ul>
+<p><strong>A Subscriber Cluster is forming to the bottom-right</strong></p>
+<ul>
+<li>A subscriber cluster with 12 stations is taking birth, having three deep green stations in the center, and 9 light-green stations around it. If properly targeted, this cluster could expand and unite with the big cluster in the center.</li>
+</ul>
+<p><strong>To the right of big cluster of subscribers, there are some outliers</strong></p>
+<ul>
+<li>The right center of the map is dominated with subscribers, however, some stations to the far right, close to the coast, are dominated with casual riders, with some having more than <strong>70%</strong> of them.  Given their proximity to Subscriber hotspots, this seems like an anomaly. These stations are also very active, as apparent by their relative size. To get more information about them, we need to dig deeper in our data. For our case, we investigate <strong>Streeter Dr &amp; Grand Ave</strong>,  <strong>Millennium Park</strong>, and <strong>Buckingham Fountain</strong>, having 75%, 76%, 80% customers respectively.</li>
+<li>First thing to notice is that all three of these are located on Public Parks, thereby attracting people from all over the city. So it could be the case that people come here during their weekends, and because they don&rsquo;t do so very often, they haven&rsquo;t taken any membership.
+<ul>
+<li>Data shows that average trip duration to and from these stations is about <strong>45 minutes</strong> for both subscribers and customers.</li>
+<li></li>
+</ul>
+</li>
+</ul>
 <h2 id="conclusion">Conclusion</h2>
 <p>The above analysis has revealed very useful statistics that can help marketing team launch a successful media campaign. By focusing on the specific stations, which are broadly connected and have a high number of casual customers, or by offering special discounts on specific routes to the subscribers, or by offering special referrals in particular areas, the company can gain high conversion.</p>
 <p><em><strong>Author: Syed Abdul Rafay</strong></em></p>
