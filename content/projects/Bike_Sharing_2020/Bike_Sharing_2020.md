@@ -51,56 +51,64 @@ Divvy_Trips_2019_full %>%
 
 ## Mapping the Data
 
-Bike stations in this dataset can be mapped to see if there is anything out of ordinary with any station, and how the user activity might be related to the locations.
+Bike stations in this dataset can be mapped to see if there is anything out of ordinary with any station, and how the user activity might be related to the locations. 
+Long/Lat values for the stations are not given separately and  are included in the same row as each ride's information along with the station name. Since each bike has its own gps device, there is slight variance in long/lat values of every station. Since each station must have a unique geo-location, mean value is used for mapping. 
 
 ### Cluster Map
 
-First thing I did is to visualize the clusters--hotspots where most of the activity takes place.
+We begin with visualizing the clusters--hotspots where most of the activity takes place.
 
 <iframe seamless src="projects/Bike_Sharing_2020/cluster_map.html" width="100%" height="700"></iframe>
 
-Most of the stations are located to the center-right, while on the periphery, the density decreases. Hovering over the stations, you can read their labels.
+*Most of the stations are located to the center-right, while on the periphery, the density decreases. Hovering over the stations, you can read their labels.*
 
 ### Connectivity Map
 
 From the above visualization, it is clear that some stations are more connected than the rest. People are traveling from all over the city to the stations to the center-right. While fewer people are moving between the stations on the periphery. 
-This is visualized as under. To reduce the clutter, only top three routes (destination points accessed from a station) are displayed. 
+This is visualized as under. To reduce the clutter, only top three routes (destination points accessed from a station) are presented. 
 
 <iframe seamless src="projects/Bike_Sharing_2020/connectivity_map.html" width="100%" height="700"></iframe>
 
-In the above map, some very good information is revealed
-
-##### Some stations on the periphery, are not connected to any other station.
-
-If we tap on those stations, we would see that their only destination is themselves, meaning that users in those neighborhood take the bike for short-travel in the area and park it back to the origin once their chores are done.
-
-##### One station inside the center-cluster is connected to only two other stations, popping out as a small pink dot.
-
-The two stations titled **HQ QR** and **HUBBARD ST BIKE CHECKING (LBS-WH-TEST)** are probably the company's headquarter, as the further analysis reveals only one way flow of bikes.
-
-##### Stations to the right, near the coast, have the most connectivity.
-
-Station called **Streeter Dr & Grand Ave** is the most connected station, and lies at the coast near *Milton Lee Olive Park*. People travel to more than 450 destinations across the city from this point. 
+*You can zoom in and tap on the stations to read their details, hover over a connecting line to see the annual rides between the two stations.*
 
 
+
+In the above map, some very useful information is revealed:
+
+***Some stations on the periphery, are not connected to any other station***
+
+* If we tap on those stations, we would see that their only destination is themselves, meaning that users in those neighborhood take the bike for short-travel in the area and park it back to the origin once their chores are done.
+
+***One station inside the center-cluster is connected to only two other stations, popping out as a small pink dot***
+
+* The two stations titled **HQ QR** and **HUBBARD ST BIKE CHECKING (LBS-WH-TEST)** are probably the company's headquarter, as the further analysis reveals only one way flow of bikes.
+
+***Stations to the right, near the coast, have the most connectivity***
+
+* Station called **Streeter Dr & Grand Ave** is the most connected station, and lies at the coast near *Milton Lee Olive Park*. People travel to more than 450 destinations across the city from this point. Three other such stations lie just near the coast, while the others in close proximity. 
+
+***The origin station is also the top destination for many stations***
+
+* Inside the popup window for many of the stations, its name is also listed as the top destination. Analyzing the data reveals that in fact most frequent routes are those that end on themselves, suggesting that users in those neighborhoods frequently use the service for short nearby traveling.  
 
 ### User Distribution Map
 
-Each station can serve as both the starting and ending point for a ride. To get a holistic picture of complete activity at every station, all the rides at a station, either starting or ending, need to be accounted for.  In the original data, rides taken by subscribers and customers are listed with a start and end point. Since each ride registers activity at two stations, the data is split into two subsets, one with the starting stations and other with ending stations.
+Now that we understand overall activity at bike stations, we need to estimate the numbers of **Subscribers** and **Customers** at all stations, to taget appropriate marketing campaigns. 
+Each station can serve as both the starting and ending point for a ride. To get a holistic picture of complete activity at every station, all the rides at a station, either starting or ending, need to be accounted for.  In the original data, rides taken by subscribers and customers are listed with a start and end point. The rides at each station are aggregated separately and then summed up,  giving total rides (both starting and ending) at every station.
 
-All rides at each station are aggregated separately and then summed up,  giving total rides (both starting and ending) at all stations.
-
-Long/Lat values for the stations are not given separately and  are included in the same row as each ride's information along with the station name. Since each bike has its own gps device, there is slight variance in long/lat values of every station. Since each station must have a unique geo-location, mean value is used for mapping. 
-
-
+The size of a circle represents the magnitude of activity at that station, and its color the type of most users.
 
 <iframe seamless src="projects/Bike_Sharing_2020/leafMap.html" width="100%" height="700"></iframe>
 
- In the above map, the size of each circle represents the scale of activity at that station. The map shows cluster of large circles, highly active stations dominated with subscribers and smaller circles, moderately active stations where majority users are casual customers, on its periphery.
+*You can zoom in and tap on the stations to read their details.*
+
+
+
+The map shows cluster of large circles, highly active stations dominated with subscribers and smaller circles, moderately active stations where majority users are casual customers, on its periphery.
 
 Inside the cluster of green stations, a few large stations pop out in red. By tapping on those stations, it can be seen that they have fairly high number of rides, but very few of them are subscribers.
 
-The company could target these particular stations for future marketing campaigns.
+
 
 
 
