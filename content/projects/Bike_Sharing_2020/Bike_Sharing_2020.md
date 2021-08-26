@@ -128,11 +128,22 @@ Sniffing the above map, we find some insightful points:
 
 ![Focus Cluster on map](projects/Bike_Sharing_2020/Sub_cus_map_snap.png)
 
-* The center-right of the map is dominated with subscribers, however, some stations to the far right, close to the coast, have a majority of casual riders, with some having more than **70%** of them.  Given their proximity to Subscriber hotspots, this seems like an anomaly. These stations are also very active, as apparent by their relative size. To get more information about them, we need to dig deeper into our data. For our case, we investigate **Streeter Dr & Grand Ave**,  **Millennium Park**, and **Buckingham Fountain**, the three leading stations in this group, having 75%, 76%, 80% customers respectively.
+* The center-right of the map is dominated with subscribers, however, some stations to the far right, close to the coast, have a majority of casual riders, with some having more than **70%** of them.  Given their proximity to Subscriber hotspots, this seems like an anomaly. These stations are also very active, as apparent by their relative size. To get more information about them, we need to dig deeper into our data. For our case, we investigate **Streeter Dr & Grand Ave**,  **Millennium Park**, and **Buckingham Fountain**, the three leading stations in this group, having 75%, 76%, and 80% customers respectively.
 * First thing to notice is that all three of these are located on Public Parks, thereby attracting people from all over the city. So it could be the case that people come here during their weekends, and because they don't do so very often, they haven't taken any membership. To confirm this hypothesis, we analyze them by summarizing and aggregating.
   * Results show that average trip duration to and fro these stations is about **45 minutes** for both subscribers and customers.
-  * Our earlier hypothesis gains merit as we plot this data, averaging on daily rides.
-  * ![Focus Cluster on map](projects/Bike_Sharing_2020/daily_rides_three_stations.png)
+  
+  * Our earlier hypothesis gains merit as we plot this data, calculating daily rides.
+  
+    ![Focus Cluster on map](projects/Bike_Sharing_2020/daily_rides_three_stations.png)
+  
+    The number of subscribers visiting these stations(in green) remains the same throughout the week, and the number is much smaller than those of casual riders(in orange), whose activity nearly triples on weekends. 
+  
+  
+    This can also be compared with average daily trips on all other stations.
+  
+    ![Focus Cluster on map](projects/Bike_Sharing_2020/tday_all_stations.png)
+  
+    As can be seen here, the result is significantly different for all other stations, where daily subscribers are far greater in number than the irregular customers. 
 
 
 
