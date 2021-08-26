@@ -91,7 +91,19 @@ In the above map, some very useful information is revealed:
 
 * Inside the popup window for many of the stations, its name is also listed as the top destination. Analyzing the data reveals that in fact most frequent routes are those that end on themselves, suggesting that users in those neighborhoods frequently use the service for short nearby traveling. To further establish this hypothesis, we return to our original data and analyze it further. 
   * Out of *3.3 million* rides  *356 thousand* started and ended at the same station, making them **10%** of all the rides taken.
+  
+    ![Top Routes by Customers](projects/Bike_Sharing_2020/sorted_by_customers.png)
+    *The above table, sorted in ascending order of rides taken by customers, show that the top routes are those that end at the starting station.*
+  
+    
+  
+    ![Top Routes by Subscribers](projects/Bike_Sharing_2020/sorted_by_Subscribers.png)
+  
+    *The above table, sorted in ascending order of rides taken by subscribers, also offers the same result.*
+  
   * Average time for these rides is **49 minutes**.
+  
+    
 
 ### User Distribution Map
 
@@ -134,14 +146,14 @@ Sniffing the above map, we find some insightful points:
   
   * Our earlier hypothesis gains merit as we plot this data, calculating daily rides.
   
-    ![Focus Cluster on map](projects/Bike_Sharing_2020/daily_rides_three_stations.png)
+    ![Daily rides at three stations](projects/Bike_Sharing_2020/daily_rides_three_stations.png)
   
     The number of subscribers visiting these stations(in green) remains the same throughout the week, and the number is much smaller than those of casual riders(in orange), whose activity nearly triples on weekends. 
   
   
     This can also be compared with average daily trips on all other stations.
   
-    ![Focus Cluster on map](projects/Bike_Sharing_2020/tday_all_stations.png)
+    ![Daily rides at all other stations](projects/Bike_Sharing_2020/tday_all_stations.png)
   
     As can be seen here, the result is significantly different for all other stations, where daily subscribers are far greater in number than the irregular customers. 
 
