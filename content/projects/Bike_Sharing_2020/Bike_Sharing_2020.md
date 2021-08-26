@@ -77,7 +77,7 @@ In the above map, some very useful information is revealed:
 
 ***Some stations on the periphery, are not connected to any other station***
 
-* If we tap on those stations, we would see that their only destination is themselves, meaning that users in those neighborhood take the bike for short-travel in the area and park it back to the origin once their chores are done.
+* If we tap on those stations, we would see that their only destination is themselves, meaning that users in those neighborhood take the bike for short-travel naerby and park it back to the origin once their chores are done.
 
 ***One station inside the center-cluster is connected to only two other stations, popping out as a small pink dot***
 
@@ -85,21 +85,22 @@ In the above map, some very useful information is revealed:
 
 ***Stations to the right, near the coast, have the most connectivity***
 
-* Station called **Streeter Dr & Grand Ave** is the most connected station, and lies at the coast near *Milton Lee Olive Park*. People travel to more than 450 destinations across the city from this point. Three other such stations lie just near the coast, while the others in close proximity. 
+* Station called **Streeter Dr & Grand Ave** is the most connected station, and lies at the coast near *Milton Lee Olive Park*. People travel to more than 450 destinations across the city from this point. Three other such stations lie just near the coast, while the others in a close proximity. 
 
 ***The origin station is also the top destination for many stations***
 
-* Inside the popup window for many of the stations, its name is also listed as the top destination. Analyzing the data reveals that in fact most frequent routes are those that end on themselves, suggesting that users in those neighborhoods frequently use the service for short nearby traveling. To further establish this hypothesis, we return to our original data and analyze it further. 
-  * Out of *3.3 million* rides  *356 thousand* started and ended at the same station, making them **10%** of all the rides taken.
+* If you tap on stations, opening their popup window, you would see the station name also listed as the top destination for many stations. Analyzing the data reveals that in fact most frequent routes are those that end on themselves, suggesting that users in those neighborhoods frequently use the service for short sistance traveling. To further establish this hypothesis, we return to our original data and analyze it further.
   
-    ![Top Routes by Customers](projects/Bike_Sharing_2020/sorted_by_customers.png)
-    *The above table, sorted in ascending order of rides taken by customers, show that the top routes are those that end at the starting station.*
+  ![Top Routes by Customers](projects/Bike_Sharing_2020/sorted_by_customers.png)
+  *The above table, sorted in descending order of rides taken by customers, show that the top routes are those that end at the starting station.*
   
-    
   
-    ![Top Routes by Subscribers](projects/Bike_Sharing_2020/sorted_by_Subscribers.png)
   
-    *The above table, sorted in ascending order of rides taken by subscribers, also offers the same result.*
+  ![Top Routes by Subscribers](projects/Bike_Sharing_2020/sorted_by_Subscribers.png)
+  
+  *The above table, sorted in descending order of rides taken by subscribers, also offers the same result.* 
+  
+  * Upon further investigation, we see that out of *3.3 million* rides,  *356 thousand* started and ended at the same station, making them **10%** of all the rides taken.
   
   * Average time for these rides is **49 minutes**.
   
