@@ -156,7 +156,7 @@ This is visualized as under. To reduce the clutter, only top three routes (desti
 <p>In the above map, some very useful information is revealed:</p>
 <p><em><strong>Some stations on the periphery, are not connected to any other station</strong></em></p>
 <ul>
-<li>If we tap on those stations, we would see that their only destination is themselves, meaning that users in those neighborhood take the bike for short-travel in the area and park it back to the origin once their chores are done.</li>
+<li>If we tap on those stations, we would see that their only destination is themselves, meaning that users in those neighborhood take the bike for short-travel naerby and park it back to the origin once their chores are done.</li>
 </ul>
 <p><em><strong>One station inside the center-cluster is connected to only two other stations, popping out as a small pink dot</strong></em></p>
 <ul>
@@ -164,18 +164,19 @@ This is visualized as under. To reduce the clutter, only top three routes (desti
 </ul>
 <p><em><strong>Stations to the right, near the coast, have the most connectivity</strong></em></p>
 <ul>
-<li>Station called <strong>Streeter Dr &amp; Grand Ave</strong> is the most connected station, and lies at the coast near <em>Milton Lee Olive Park</em>. People travel to more than 450 destinations across the city from this point. Three other such stations lie just near the coast, while the others in close proximity.</li>
+<li>Station called <strong>Streeter Dr &amp; Grand Ave</strong> is the most connected station, and lies at the coast near <em>Milton Lee Olive Park</em>. People travel to more than 450 destinations across the city from this point. Three other such stations lie just near the coast, while the others in a close proximity.</li>
 </ul>
 <p><em><strong>The origin station is also the top destination for many stations</strong></em></p>
 <ul>
-<li>Inside the popup window for many of the stations, its name is also listed as the top destination. Analyzing the data reveals that in fact most frequent routes are those that end on themselves, suggesting that users in those neighborhoods frequently use the service for short nearby traveling. To further establish this hypothesis, we return to our original data and analyze it further.
+<li>
+<p>If you tap on stations, opening their popup window, you would see the station name also listed as the top destination for many stations. Analyzing the data reveals that in fact most frequent routes are those that end on themselves, suggesting that users in those neighborhoods frequently use the service for short sistance traveling. To further establish this hypothesis, we return to our original data and analyze it further.</p>
+<p><img src="projects/Bike_Sharing_2020/sorted_by_customers.png" alt="Top Routes by Customers">
+<em>The above table, sorted in descending order of rides taken by customers, show that the top routes are those that end at the starting station.</em></p>
+<p><img src="projects/Bike_Sharing_2020/sorted_by_Subscribers.png" alt="Top Routes by Subscribers"></p>
+<p><em>The above table, sorted in descending order of rides taken by subscribers, also offers the same result.</em></p>
 <ul>
 <li>
-<p>Out of <em>3.3 million</em> rides  <em>356 thousand</em> started and ended at the same station, making them <strong>10%</strong> of all the rides taken.</p>
-<p><img src="projects/Bike_Sharing_2020/sorted_by_customers.png" alt="Top Routes by Customers">
-<em>The above table, sorted in ascending order of rides taken by customers, show that the top routes are those that end at the starting station.</em></p>
-<p><img src="projects/Bike_Sharing_2020/sorted_by_Subscribers.png" alt="Top Routes by Subscribers"></p>
-<p><em>The above table, sorted in ascending order of rides taken by subscribers, also offers the same result.</em></p>
+<p>Upon further investigation, we see that out of <em>3.3 million</em> rides,  <em>356 thousand</em> started and ended at the same station, making them <strong>10%</strong> of all the rides taken.</p>
 </li>
 <li>
 <p>Average time for these rides is <strong>49 minutes</strong>.</p>
