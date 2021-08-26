@@ -90,7 +90,7 @@ In the above map, some very useful information is revealed:
 ***The origin station is also the top destination for many stations***
 
 * Inside the popup window for many of the stations, its name is also listed as the top destination. Analyzing the data reveals that in fact most frequent routes are those that end on themselves, suggesting that users in those neighborhoods frequently use the service for short nearby traveling. To further establish this hypothesis, we return to our original data and analyze it further. 
-  * Out of *3 million* rides  *356 thousand* started and ended at the same station, making them **10%** of all the rides taken.
+  * Out of *3.3 million* rides  *356 thousand* started and ended at the same station, making them **10%** of all the rides taken.
   * Average time for these rides is **49 minutes**.
 
 ### User Distribution Map
@@ -98,7 +98,7 @@ In the above map, some very useful information is revealed:
 Now that we understand overall activity at bike stations, we need to estimate the numbers of **Subscribers** and **Customers** at all stations, to taget appropriate marketing campaigns. 
 Each station can serve as both the starting and ending point for a ride. To get a holistic picture of complete activity at every station, all the rides at a station, either starting or ending, need to be accounted for.  In the original data, rides taken by subscribers and customers are listed with a start and end point. The rides at each station are aggregated separately and then summed up,  giving total rides (both starting and ending) at every station.
 
-The size of a circle represents the magnitude of activity at that station, and its color the type of most users.
+The size of a circle represents the magnitude of activity at that station, and its color the type of its majority users.
 
 <iframe seamless src="projects/Bike_Sharing_2020/leafMap.html" width="100%" height="700"></iframe>
 
@@ -108,7 +108,15 @@ The size of a circle represents the magnitude of activity at that station, and i
 
 The map shows cluster of large circles, highly active stations dominated with subscribers and smaller circles, moderately active stations where majority users are casual customers, on its periphery.
 
-Inside the cluster of green stations, a few large stations pop out in red. By tapping on those stations, it can be seen that they have fairly high number of rides, but very few of them are subscribers.
+Sniffing the above map, we find some insightful points:
+
+**Two small circles in red, pop out near the center left**
+
+* Two stations titled **HQ QR** and **HUBBARD ST BIKE CHECKING (LBS-WH-TEST)**, although surrounded with a lot of Subscribers type stations,  have majority user type listed as Customers. These stations, as explained in our *Connectivity Map* above, are only connected amongst themselves and are likely the company's own facilities, causing this apparent deviation. 
+
+**To the right of big cluster of subscribers, there are some outliers**
+
+* The right center of the map is dominated with subscribers, however, some stations to the far right, close to the coast, are dominated with casual riders.  These stations are also very active, as apparent by their relative size. To get more information about them, we need to dig deeper in our data.
 
 
 
