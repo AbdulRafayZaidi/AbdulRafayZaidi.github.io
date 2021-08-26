@@ -170,8 +170,16 @@ This is visualized as under. To reduce the clutter, only top three routes (desti
 <ul>
 <li>Inside the popup window for many of the stations, its name is also listed as the top destination. Analyzing the data reveals that in fact most frequent routes are those that end on themselves, suggesting that users in those neighborhoods frequently use the service for short nearby traveling. To further establish this hypothesis, we return to our original data and analyze it further.
 <ul>
-<li>Out of <em>3.3 million</em> rides  <em>356 thousand</em> started and ended at the same station, making them <strong>10%</strong> of all the rides taken.</li>
-<li>Average time for these rides is <strong>49 minutes</strong>.</li>
+<li>
+<p>Out of <em>3.3 million</em> rides  <em>356 thousand</em> started and ended at the same station, making them <strong>10%</strong> of all the rides taken.</p>
+<p><img src="projects/Bike_Sharing_2020/sorted_by_customers.png" alt="Top Routes by Customers">
+<em>The above table, sorted in ascending order of rides taken by customers, show that the top routes are those that end at the starting station.</em></p>
+<p><img src="projects/Bike_Sharing_2020/sorted_by_Subscribers.png" alt="Top Routes by Subscribers"></p>
+<p><em>The above table, sorted in ascending order of rides taken by subscribers, also offers the same result.</em></p>
+</li>
+<li>
+<p>Average time for these rides is <strong>49 minutes</strong>.</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -206,10 +214,10 @@ Each station can serve as both the starting and ending point for a ride. To get 
 </li>
 <li>
 <p>Our earlier hypothesis gains merit as we plot this data, calculating daily rides.</p>
-<p><img src="projects/Bike_Sharing_2020/daily_rides_three_stations.png" alt="Focus Cluster on map"></p>
+<p><img src="projects/Bike_Sharing_2020/daily_rides_three_stations.png" alt="Daily rides at three stations"></p>
 <p>The number of subscribers visiting these stations(in green) remains the same throughout the week, and the number is much smaller than those of casual riders(in orange), whose activity nearly triples on weekends.</p>
 <p>This can also be compared with average daily trips on all other stations.</p>
-<p><img src="projects/Bike_Sharing_2020/tday_all_stations.png" alt="Focus Cluster on map"></p>
+<p><img src="projects/Bike_Sharing_2020/tday_all_stations.png" alt="Daily rides at all other stations"></p>
 <p>As can be seen here, the result is significantly different for all other stations, where daily subscribers are far greater in number than the irregular customers.</p>
 </li>
 </ul>
