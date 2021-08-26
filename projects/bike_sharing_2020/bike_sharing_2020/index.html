@@ -116,7 +116,7 @@ Previously, data for year 2019 was analyzed.">
           <h1> Geo-mapping Cyclistic Data </h1>
 
             <div class="sub-header">
-              March 21, 2021 · 6 minutes read
+              March 21, 2021 · 7 minutes read
             </div>
 
           <article class="entry-content">
@@ -196,12 +196,14 @@ Each station can serve as both the starting and ending point for a ride. To get 
 <li>A subscriber cluster with 12 stations is taking birth, having three deep green stations in the center, and 9 light-green stations around it. If properly targeted, this cluster could expand and unite with the big cluster in the center.</li>
 </ul>
 <p><strong>To the right of big cluster of subscribers, there are some outliers</strong></p>
+<p><img src="projects/Bike_Sharing_2020/Sub_cus_map_snap.png" alt="Focus Cluster on map"></p>
 <ul>
-<li>The right center of the map is dominated with subscribers, however, some stations to the far right, close to the coast, are dominated with casual riders, with some having more than <strong>70%</strong> of them.  Given their proximity to Subscriber hotspots, this seems like an anomaly. These stations are also very active, as apparent by their relative size. To get more information about them, we need to dig deeper in our data. For our case, we investigate <strong>Streeter Dr &amp; Grand Ave</strong>,  <strong>Millennium Park</strong>, and <strong>Buckingham Fountain</strong>, having 75%, 76%, 80% customers respectively.</li>
-<li>First thing to notice is that all three of these are located on Public Parks, thereby attracting people from all over the city. So it could be the case that people come here during their weekends, and because they don&rsquo;t do so very often, they haven&rsquo;t taken any membership.
+<li>The center-right of the map is dominated with subscribers, however, some stations to the far right, close to the coast, have a majority of casual riders, with some having more than <strong>70%</strong> of them.  Given their proximity to Subscriber hotspots, this seems like an anomaly. These stations are also very active, as apparent by their relative size. To get more information about them, we need to dig deeper into our data. For our case, we investigate <strong>Streeter Dr &amp; Grand Ave</strong>,  <strong>Millennium Park</strong>, and <strong>Buckingham Fountain</strong>, the three leading stations in this group, having 75%, 76%, 80% customers respectively.</li>
+<li>First thing to notice is that all three of these are located on Public Parks, thereby attracting people from all over the city. So it could be the case that people come here during their weekends, and because they don&rsquo;t do so very often, they haven&rsquo;t taken any membership. To confirm this hypothesis, we analyze them by summarizing and aggregating.
 <ul>
-<li>Data shows that average trip duration to and from these stations is about <strong>45 minutes</strong> for both subscribers and customers.</li>
-<li></li>
+<li>Results show that average trip duration to and fro these stations is about <strong>45 minutes</strong> for both subscribers and customers.</li>
+<li>Our earlier hypothesis gains merit as we plot this data, averaging on daily rides.</li>
+<li><img src="projects/Bike_Sharing_2020/daily_rides_three_stations.png" alt="Focus Cluster on map"></li>
 </ul>
 </li>
 </ul>
