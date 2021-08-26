@@ -110,13 +110,26 @@ The map shows cluster of large circles, highly active stations dominated with su
 
 Sniffing the above map, we find some insightful points:
 
-**Two small circles in red, pop out near the center left**
+
+
+**A big green blob in the center**
+
+* This is the part dominated with subscribers, with a number of stations having more than **70%** Subscribers, represented in deep green circles.
+
+**Two small circles in red, pop out near the central cluster**
 
 * Two stations titled **HQ QR** and **HUBBARD ST BIKE CHECKING (LBS-WH-TEST)**, although surrounded with a lot of Subscribers type stations,  have majority user type listed as Customers. These stations, as explained in our *Connectivity Map* above, are only connected amongst themselves and are likely the company's own facilities, causing this apparent deviation. 
 
+**A Subscriber Cluster is forming to the bottom-right**
+
+* A subscriber cluster with 12 stations is taking birth, having three deep green stations in the center, and 9 light-green stations around it. If properly targeted, this cluster could expand and unite with the big cluster in the center.
+
 **To the right of big cluster of subscribers, there are some outliers**
 
-* The right center of the map is dominated with subscribers, however, some stations to the far right, close to the coast, are dominated with casual riders.  These stations are also very active, as apparent by their relative size. To get more information about them, we need to dig deeper in our data.
+* The right center of the map is dominated with subscribers, however, some stations to the far right, close to the coast, are dominated with casual riders, with some having more than **70%** of them.  Given their proximity to Subscriber hotspots, this seems like an anomaly. These stations are also very active, as apparent by their relative size. To get more information about them, we need to dig deeper in our data. For our case, we investigate **Streeter Dr & Grand Ave**,  **Millennium Park**, and **Buckingham Fountain**, having 75%, 76%, 80% customers respectively.
+* First thing to notice is that all three of these are located on Public Parks, thereby attracting people from all over the city. So it could be the case that people come here during their weekends, and because they don't do so very often, they haven't taken any membership.
+  * Data shows that average trip duration to and from these stations is about **45 minutes** for both subscribers and customers.
+  * 
 
 
 
