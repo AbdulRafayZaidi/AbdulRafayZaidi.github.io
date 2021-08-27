@@ -58,7 +58,7 @@ library("htmlwidgets")	## To export interactive web maps
 
 * **Station Names have duplicates with an end phrase or a word.**
 
-Using 11month's data, we create a data-frame having only Station Ids and their Names. This is cleaned up by getting rid of duplicate names, so we get a set of unique station Ids and their respective names, and we may call it our *station_id_names* data frame.
+Using 11month's data, we create a data-frame having only Station Ids and their Names. This is cleaned up by getting rid of duplicate names, so we get a set of unique station Ids and their respective names. We may call it our *station_id_names* data frame.
 
 Since the data from Jan to Nov conforms, we combine it into a single data frame. Using the *station_id_names*, the missing station Ids are populated by referencing against their station names.
 
@@ -68,7 +68,7 @@ The whole dataset is then merged. Rows where both Id and Name for a start or end
 
 ### Data Structure
 
-Using R, we can take a quick peek of the mergdataset with following commands. 
+Using R, we can take a quick peek of the merged data with following commands. 
 
 ```rst
  dim(divvy_trips_2020)
@@ -97,26 +97,22 @@ Using R, we can take a quick peek of the mergdataset with following commands.
 
 ### Manipulation
 
+After the cleaning operation, our data is ready for analysis. But before that, we do some manipulation to help in our analysis. 
 
+* Cyclistic data for year 2020 had different naming convention for its variables. To reuse some of our earlier code, and to correlate the two sets, we change some of the column names. Moreover, user types are renamed from Casual and Subscriber to Customer and Subscriber.
+* Since we have already created *station_id_names*, we no longer need station name columns in our combined dataset since they could always be referenced by their station Ids, and so they are removed.
+* Longitude / latitude values for the stations are not given separately and  are included in the same row as each ride's information, alongside the station id and name. Since each bike has its own GPS device, there is slight variance in long/lat values of every station. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station. These values are then merged in *station_id_names* data frame, and are removed from the *divvy_trips_2020*. 
+* By grouping, and summarizing *divvy_trips_2020*, total number of subscribers and casual riders visiting any station are calculated. First, we figure out total rides from starting stations, then for ending stations, and then we sum them up. The result is converted from long to wide format, number of rides by subscribers and customers falling into two separate columns, and is added to *station_id_names* data frame.
 
-
-
-
-
-
-
-```rst
-Divvy_Trips_2019_full %>% 
-	distinct(to_station_id)
-#A tibble: 617 x 1
+```
 ```
 
-**The combined data has a record 3,818,004 rides, split into 12 columns having Trip ID, Start Time, End Time, Bike ID, Trip Duration, From Station (Starting Point), To Station (End Station), User Type, Gender, and Birthyear. The company has 6,017 bikes and 617 stations.**
+
 
 ## Mapping the Data
 
 Bike stations in this dataset can be mapped to see if there is anything out of ordinary with any station, and how the user activity might be related to the locations. 
-Long/Lat values for the stations are not given separately and  are included in the same row as each ride's information along with the station name. Since each bike has its own gps device, there is slight variance in long/lat values of every station. Since each station must have a unique geo-location, mean value is used for mapping. 
+
 
 ### Cluster Map
 
