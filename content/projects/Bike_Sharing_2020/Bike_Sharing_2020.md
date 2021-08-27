@@ -178,10 +178,14 @@ Sniffing the above map, we find some insightful points:
 The above analysis has revealed very useful statistics that can help marketing team launch a successful media campaign. 
 
 * Instead of focusing on particular stations, the company could target regions, the clusters where most casual riders are.
-* Further, the activity is different during different times of day, and different days of week. The behavior is not the same for our user types. So campaigning at particular days, and times can provide better results.
+* Further, the activity is different during different times of day, and different days of week. And the behavior is not the same for both our user types. So campaigning at particular days, and times can provide better results.
 * Some routes are more frequented than the rest, and need special attention. 
 
 This initial analysis provides a surface level picture of  the company's userbase. Some of the initial result for particular target cluster can be readily used for initial marketing, however, to make it successful, the analytics team must work in coordination with the marketing time, providing them base level information about specific stations or cluster whenever required.
+
+
+
+
 
 
 
