@@ -147,16 +147,16 @@ Sniffing the above map, we find some insightful points:
   
   * Our earlier hypothesis gains merit as we plot this data, calculating daily rides.
   
-    ![Daily rides at three stations](projects/Bike_Sharing_2020/daily_rides_three_stations.png)
+    ![Daily rides at three stations](projects/Bike_Sharing_2020/tday_three_stations.png)
   
     The number of subscribers visiting these stations(in green) remains the same throughout the week, and the number is much smaller than those of casual riders(in orange), whose activity nearly triples on weekends. 
-  
-  
+    
     This can also be compared with average daily trips on all other stations.
-  
+    
     ![Daily rides at all other stations](projects/Bike_Sharing_2020/tday_all_stations.png)
-  
+    
     As can be seen here, the result is significantly different for all other stations, where daily subscribers are far greater in number than the irregular customers. 
+  
 
 
 
