@@ -116,7 +116,7 @@ Previously, data for year 2019 was analyzed.">
           <h1> Geo-mapping Cyclistic Data </h1>
 
             <div class="sub-header">
-              March 21, 2021 · 8 minutes read
+              March 21, 2021 · 9 minutes read
             </div>
 
           <article class="entry-content">
@@ -127,6 +127,7 @@ Previously, data for year 2019 was analyzed.">
 <p>All the data is available here <a href="https://divvy-tripdata.s3.amazonaws.com/index.html">https://divvy-tripdata.s3.amazonaws.com/index.html</a>.</p>
 <p>Naming convention is different for year 2020 and 2019, so for consistency, the variables for present data are renamed.</p>
 <h2 id="overview">Overview</h2>
+<h3 id="data-structure">Data Structure</h3>
 <p>Using R, we can take a quick peek of the dataset with following commands.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rst" data-lang="rst">dim(Divvy_Trips_2019_full)<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>[1] 3818004      12<span style="color:#960050;background-color:#1e0010">
@@ -141,6 +142,24 @@ Previously, data for year 2019 was analyzed.">
 </span><span style="color:#960050;background-color:#1e0010"></span>	distinct(to_station_id)<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>#A tibble: 617 x 1<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>The combined data has a record 3,818,004 rides, split into 12 columns having Trip ID, Start Time, End Time, Bike ID, Trip Duration, From Station (Starting Point), To Station (End Station), User Type, Gender, and Birthyear. The company has 6,017 bikes and 617 stations.</strong></p>
+<h3 id="r-libraries">R Libraries</h3>
+<p>A number of R libraries were called to perform different functions. Following were used to clean, prepare, and analyze the data:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-reStructuredText" data-lang="reStructuredText">library(&#34;readr&#34;) 		## To import dataset<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>library(&#34;janitor&#34;) 		## To clean the data<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>library(&#34;dplyr&#34;) 		## To manipulate the dataframes<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>library(&#34;lubridate&#34;) 	## To work with datetime values<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>For the visualization parts, these libraries came into play:</p>
+<pre><code># Broadly, the following were used for mapping:
+
+library(&quot;leaflet&quot;) 		## To prepare JS based maps
+library(&quot;igraph&quot;)		## To find networks/edges
+library(&quot;sp&quot;)			## To work with long/lat coords
+library(&quot;htmlwidgets&quot;)	## To export interactive web maps
+
+# Lastly, one monstrous library to create plots
+ library(&quot;ggplot2&quot;)
+</code></pre><h3 id="preparing-and-cleaning">Preparing and Cleaning</h3>
+<h3 id="manipulation">Manipulation</h3>
 <h2 id="mapping-the-data">Mapping the Data</h2>
 <p>Bike stations in this dataset can be mapped to see if there is anything out of ordinary with any station, and how the user activity might be related to the locations.
 Long/Lat values for the stations are not given separately and  are included in the same row as each ride&rsquo;s information along with the station name. Since each bike has its own gps device, there is slight variance in long/lat values of every station. Since each station must have a unique geo-location, mean value is used for mapping.</p>
