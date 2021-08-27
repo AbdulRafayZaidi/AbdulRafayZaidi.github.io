@@ -13,33 +13,95 @@ The goal is to understand how both the types of users use the service differentl
 
 Previously, data for year 2019 was analyzed. The older datasets don't have values for longitude and latitude. To map the statistics, data from year 2020 is used that contains the geo-locations for the bike stations.
 
-All the data is available here https://divvy-tripdata.s3.amazonaws.com/index.html. 
+All the data is available [here](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
-Naming convention is different for year 2020 and 2019, so for consistency, the variables for present data are renamed.  
+
 
 ## Overview
 
+The data for year 2020 is divided into 1 quarter and 9 months. The data is downloaded, skimmed, prepared, cleaned, and manipulated.
+
+### R Libraries
+
+A number of R libraries were called to perform different functions. Following were used to clean, prepare, and analyze the data:
+
+```rst
+library("readr") 		## To import dataset
+library("janitor") 		## To clean the data
+library("dplyr") 		## To manipulate the dataframes
+library("lubridate") 	## To work with datetime values
+```
+
+For the visualization parts, these libraries came into play:
+
+```rst
+# Broadly, the following were used for mapping:
+
+library("leaflet") 		## To prepare JS based maps
+library("igraph")		## To find networks/edges
+library("sp")			## To work with long/lat coords
+library("htmlwidgets")	## To export interactive web maps
+
+# Lastly, one monstrous library to create plots is loaded
+ library("ggplot2")
+```
+
+###  Preparing and Cleaning
+
+  First part of tidying is to look for problems in the data. There are a couple of them: 
+
+* **In the data for first 11months, station Ids are unique numbers. However, in the last month's file, the id is sometimes in accordance with the previous data, at times missing, and at others a combination of alphanumeric characters.**
+
+* **Some Station Names and/or Station Ids are missing.**
+
+* **In some rows complete information(both Id and name) is missing about a start or end station or both.** 
+
+* **Station Names have duplicates with an end phrase or a word.**
+
+Using 11month's data, we create a data-frame having only Station Ids and their Names. This is cleaned up by getting rid of duplicate names, so we get a set of unique station Ids and their respective names, and we may call it our *station_id_names* data frame.
+
+Since the data from Jan to Nov conforms, we combine it into a single data frame. Using the *station_id_names*, the missing station Ids are populated by referencing against their station names.
+
+The data for December has problematic station Ids so it's cleaned up separately. Firstly, missing station names are filled up using *station_id_names* by referencing against the Id columns. The Id columns are then removed, and are then cross referenced and merged by using station_id_names.
+
+The whole dataset is then merged. Rows where both Id and Name for a start or end station are missing are removed because they can't be referenced in any way. After cleaning up, we get 3.38 million rows out of 3.52 million.
+
 ### Data Structure
 
-Using R, we can take a quick peek of the dataset with following commands. 
+Using R, we can take a quick peek of the mergdataset with following commands. 
 
 ```rst
-dim(Divvy_Trips_2019_full)
-[1] 3818004      12
+ dim(divvy_trips_2020)
+[1] 3385515      13
 ```
 
 ```rst
-colnames(Divvy_Trips_2019_full)
-[1] "trip_id"           "start_time"        "end_time"          "bikeid"           
-[5] "tripduration"      "from_station_id"   "from_station_name" "to_station_id"    
-[9] "to_station_name"   "usertype"          "gender"            "birthyear"
+ colnames(divvy_trips_2020)
+ [1] "ride_id"            "rideable_type"      "started_at"         "ended_at"           "start_station_name" "start_station_id"  
+ [7] "end_station_name"   "end_station_id"     "start_lat"          "start_lng"          "end_lat"            "end_lng"           
+[13] "member_casual"
 ```
 
 ```rst
-Divvy_Trips_2019_full %>% 
-	distinct(bikeid)
-#A tibble: 6,017 x 1
+ head(divvy_trips_2020)
+# A tibble: 6 x 13
+  ride_id         rideable_type started_at          ended_at            start_station_name                 start_station_id end_station_name           end_station_id start_lat start_lng end_lat end_lng member_casual
+  <chr>           <chr>         <dttm>              <dttm>              <chr>                                         <dbl> <chr>                               <dbl>     <dbl>     <dbl>   <dbl>   <dbl> <chr>        
+1 000001004784CD~ docked_bike   2020-07-22 15:38:23 2020-07-22 15:56:47 Wolcott (Ravenswood) Ave & Montro~              238 Southport Ave & Clybourn ~            307      42.0     -87.7    41.9   -87.7 casual       
+2 00000550C66510~ docked_bike   2020-06-06 15:20:01 2020-06-06 16:28:09 Sheffield Ave & Waveland Ave                    114 Kedzie Ave & Milwaukee Ave            260      41.9     -87.7    41.9   -87.7 casual       
+3 0000127970C84F~ docked_bike   2020-05-30 06:36:36 2020-05-30 06:55:28 Green St & Madison St                           198 Wells St & Concord Ln                 289      41.9     -87.6    41.9   -87.6 member       
+4 00001E17DEF409~ docked_bike   2020-07-08 21:45:01 2020-07-08 21:57:57 Wabash Ave & Roosevelt Rd                        59 Indiana Ave & 26th St                 147      41.9     -87.6    41.8   -87.6 member       
+5 00002279D7D315~ docked_bike   2020-09-26 15:19:31 2020-09-26 15:44:07 Aberdeen St & Monroe St                          80 Rush St & Superior St                 161      41.9     -87.7    41.9   -87.6 casual       
+6 000027AD78DF9C~ docked_bike   2020-06-27 22:35:16 2020-06-27 22:46:41 Halsted St & Wrightwood Ave                     349 Pine Grove Ave & Waveland~            232      41.9     -87.6    41.9   -87.6 member   
 ```
+
+### Manipulation
+
+
+
+
+
+
 
 
 
@@ -50,35 +112,6 @@ Divvy_Trips_2019_full %>%
 ```
 
 **The combined data has a record 3,818,004 rides, split into 12 columns having Trip ID, Start Time, End Time, Bike ID, Trip Duration, From Station (Starting Point), To Station (End Station), User Type, Gender, and Birthyear. The company has 6,017 bikes and 617 stations.**
-
-### R Libraries
-
-A number of R libraries were called to perform different functions. Following were used to clean, prepare, and analyze the data:
-
-```reStructuredText
-library("readr") 		## To import dataset
-library("janitor") 		## To clean the data
-library("dplyr") 		## To manipulate the dataframes
-library("lubridate") 	## To work with datetime values
-```
-
-For the visualization parts, these libraries came into play:
-
-```
-# Broadly, the following were used for mapping:
-
-library("leaflet") 		## To prepare JS based maps
-library("igraph")		## To find networks/edges
-library("sp")			## To work with long/lat coords
-library("htmlwidgets")	## To export interactive web maps
-
-# Lastly, one monstrous library to create plots
- library("ggplot2")
-```
-
-###  Preparing and Cleaning
-
-### Manipulation
 
 ## Mapping the Data
 
