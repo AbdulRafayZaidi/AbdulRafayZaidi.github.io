@@ -159,12 +159,12 @@ Previously, data for year 2019 was analyzed.">
 <p><strong>Station Names have duplicates with an end phrase or a word.</strong></p>
 </li>
 </ul>
-<p>Using 11month&rsquo;s data, we create a data-frame having only Station Ids and their Names. This is cleaned up by getting rid of duplicate names, so we get a set of unique station Ids and their respective names, and we may call it our <em>station_id_names</em> data frame.</p>
+<p>Using 11month&rsquo;s data, we create a data-frame having only Station Ids and their Names. This is cleaned up by getting rid of duplicate names, so we get a set of unique station Ids and their respective names. We may call it our <em>station_id_names</em> data frame.</p>
 <p>Since the data from Jan to Nov conforms, we combine it into a single data frame. Using the <em>station_id_names</em>, the missing station Ids are populated by referencing against their station names.</p>
 <p>The data for December has problematic station Ids so it&rsquo;s cleaned up separately. Firstly, missing station names are filled up using <em>station_id_names</em> by referencing against the Id columns. The Id columns are then removed, and are then cross referenced and merged by using station_id_names.</p>
 <p>The whole dataset is then merged. Rows where both Id and Name for a start or end station are missing are removed because they can&rsquo;t be referenced in any way. After cleaning up, we get 3.38 million rows out of 3.52 million.</p>
 <h3 id="data-structure">Data Structure</h3>
-<p>Using R, we can take a quick peek of the mergdataset with following commands.</p>
+<p>Using R, we can take a quick peek of the merged data with following commands.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rst" data-lang="rst"> dim(divvy_trips_2020)<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>[1] 3385515      13<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rst" data-lang="rst"> colnames(divvy_trips_2020)<span style="color:#960050;background-color:#1e0010">
@@ -182,13 +182,15 @@ Previously, data for year 2019 was analyzed.">
 </span><span style="color:#960050;background-color:#1e0010"></span>5 00002279D7D315~ docked_bike   2020-09-26 15:19:31 2020-09-26 15:44:07 Aberdeen St &amp; Monroe St                          80 Rush St &amp; Superior St                 161      41.9     -87.7    41.9   -87.6 casual       <span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>6 000027AD78DF9C~ docked_bike   2020-06-27 22:35:16 2020-06-27 22:46:41 Halsted St &amp; Wrightwood Ave                     349 Pine Grove Ave &amp; Waveland~            232      41.9     -87.6    41.9   -87.6 member   <span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><h3 id="manipulation">Manipulation</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rst" data-lang="rst">Divvy_Trips_2019_full %&gt;% <span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>	distinct(to_station_id)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>#A tibble: 617 x 1<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p><strong>The combined data has a record 3,818,004 rides, split into 12 columns having Trip ID, Start Time, End Time, Bike ID, Trip Duration, From Station (Starting Point), To Station (End Station), User Type, Gender, and Birthyear. The company has 6,017 bikes and 617 stations.</strong></p>
-<h2 id="mapping-the-data">Mapping the Data</h2>
-<p>Bike stations in this dataset can be mapped to see if there is anything out of ordinary with any station, and how the user activity might be related to the locations.
-Long/Lat values for the stations are not given separately and  are included in the same row as each ride&rsquo;s information along with the station name. Since each bike has its own gps device, there is slight variance in long/lat values of every station. Since each station must have a unique geo-location, mean value is used for mapping.</p>
+<p>After the cleaning operation, our data is ready for analysis. But before that, we do some manipulation to help in our analysis.</p>
+<ul>
+<li>Cyclistic data for year 2020 had different naming convention for its variables. To reuse some of our earlier code, and to correlate the two sets, we change some of the column names. Moreover, user types are renamed from Casual and Subscriber to Customer and Subscriber.</li>
+<li>Since we have already created <em>station_id_names</em>, we no longer need station name columns in our combined dataset since they could always be referenced by their station Ids, and so they are removed.</li>
+<li>Longitude / latitude values for the stations are not given separately and  are included in the same row as each ride&rsquo;s information, alongside the station id and name. Since each bike has its own GPS device, there is slight variance in long/lat values of every station. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station. These values are then merged in <em>station_id_names</em> data frame, and are removed from the <em>divvy_trips_2020</em>.</li>
+<li>By grouping, and summarizing <em>divvy_trips_2020</em>, total number of subscribers and casual riders visiting any station are calculated. First, we figure out total rides from starting stations, then for ending stations, and then we sum them up. The result is converted from long to wide format, number of rides by subscribers and customers falling into two separate columns, and is added to <em>station_id_names</em> data frame.</li>
+</ul>
+<pre><code></code></pre><h2 id="mapping-the-data">Mapping the Data</h2>
+<p>Bike stations in this dataset can be mapped to see if there is anything out of ordinary with any station, and how the user activity might be related to the locations.</p>
 <h3 id="cluster-map">Cluster Map</h3>
 <p>We begin with visualizing the clusters&ndash;hotspots where most of the activity takes place.</p>
 <iframe seamless src="projects/Bike_Sharing_2020/cluster_map.html" width="100%" height="700"></iframe>
