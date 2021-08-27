@@ -1,7 +1,7 @@
 ---
 
 title: "Geo-mapping Cyclistic Data"
-date: 2021-08-27T22:34:46Z
+date: 2021-03-21T22:34:46Z
 draft: false
 ---
 
@@ -11,7 +11,7 @@ Cyclistic is a bike-share company based in Chicago, USA. Its users are both the 
 
 The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers. 
 
-Previously, data for year 2019 was analyzed. The older datasets don't have values for longitude and latitude. To map the statistics, data from year 2020 is used that contains the geo-locations for the bike stations.
+Previously, data for year [2019](/projects/divvy_bike_sharing_2019/divvy_bike-sharing/) was worked upon, a crude analysis scratching only the surface level information. In contrast, this one goes in depth, and also makes use of geo-mapping. 
 
 All the data is available [here](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
@@ -259,7 +259,7 @@ The above analysis has revealed very useful statistics that can help marketing t
 * Further, the activity is different during different times of day, and different days of week. And the behavior is not the same for both our user types. So campaigning at particular days, and times can provide better results.
 * Some routes are more frequented than the rest, and need special attention. 
 
-This initial analysis provides a surface level picture of  the company's userbase. Some of the initial result for particular target cluster can be readily used for initial marketing, however, to make it successful, the analytics team must work in coordination with the marketing time, providing them base level information about specific stations or cluster whenever required.
+This initial analysis provides a surface level picture of  the company's userbase. Some of the initial result for particular target cluster can be readily used for initial marketing, however, to make it successful, the analytics team must work in coordination with the marketing team, providing them base level information about specific stations or cluster whenever required.
 
 
 
