@@ -51,8 +51,6 @@ Divvy_Trips_2019_full %>%
 
 **The combined data has a record 3,818,004 rides, split into 12 columns having Trip ID, Start Time, End Time, Bike ID, Trip Duration, From Station (Starting Point), To Station (End Station), User Type, Gender, and Birthyear. The company has 6,017 bikes and 617 stations.**
 
-### Manipulation
-
 ### R Libraries
 
 A number of R libraries were called to perform different functions. Following were used to clean, prepare, and analyze the data:
@@ -68,13 +66,19 @@ For the visualization parts, these libraries came into play:
 
 ```
 # Broadly, the following were used for mapping:
+
 library("leaflet") 		## To prepare JS based maps
 library("igraph")		## To find networks/edges
 library("sp")			## To work with long/lat coords
 library("htmlwidgets")	## To export interactive web maps
+
+# Lastly, one monstrous library to create plots
+ library("ggplot2")
 ```
 
+###  Preparing and Cleaning
 
+### Manipulation
 
 ## Mapping the Data
 
