@@ -1,7 +1,7 @@
 ---
 
 title: "Geo-mapping Cyclistic Data"
-date: 2021-03-21T22:34:46Z
+date: 2021-08-27T22:34:46Z
 draft: false
 ---
 
@@ -103,7 +103,7 @@ Using R, we can take a quick peek of the merged data with following commands.
 
 After the cleaning operation, our data is ready for analysis. But before that, we do some manipulation to help in our analysis. 
 
-* Cyclistic data for year 2020 had different naming convention for its variables. To reuse some of our earlier code, and to correlate the two sets, we change some of the column names. Moreover, user types are renamed from Casual and Subscriber to Customer and Subscriber.
+* Cyclistic data for year 2020 had different naming convention for its variables. To reuse some of our earlier code, and to correlate the two sets, we change some of the column names. Moreover, user types are renamed from Casual and Member to Customer and Subscriber.
 * Since we have already created *station_id_names*, we no longer need station name columns in our combined dataset since they could always be referenced by their station Ids, and so they are removed.
 * Longitude / latitude values for the stations are not given separately and  are included in the same row as each ride's information, alongside the station id and name. Since each bike has its own GPS device, there is slight variance in long/lat values of every station. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station. These values are then merged in *station_id_names* data frame, and are removed from the *divvy_trips_2020*. 
 * By grouping, and summarizing *divvy_trips_2020*, total number of subscribers and casual riders visiting any station are calculated. First, we figure out total rides from starting stations, then for ending stations, and then we sum them up. The result is converted from long to wide format, number of rides by subscribers and customers falling into two separate columns, and is added to *station_id_names* data frame.
@@ -123,8 +123,9 @@ head(station_id_names)
 
 The data can be summarized as below:
 
-* Total number of stations is 669.
-* 
+* Total number of stations is **669**.
+* Out of 3.4 million rides, **61.6%** were taken by subscribers and the rest by casual customers.
+* Average ride by a casual rider is **46 minutes** long, while by a subscriber is **12 minutes** long.
 
 ## Mapping the Data
 
@@ -177,7 +178,7 @@ In the above map, some very useful information is revealed:
   
   *The above table, sorted in descending order of rides taken by subscribers, also offers the same result.* 
   
-  * Upon further investigation, we see that out of *3.3 million* rides,  *356 thousand* started and ended at the same station, making them **10%** of all the rides taken.
+  * Upon further investigation, we see that out of *3.4 million* rides,  *356 thousand* started and ended at the same station, making them **10%** of all the rides taken.
   
   * Average time for these rides is **49 minutes**.
   
