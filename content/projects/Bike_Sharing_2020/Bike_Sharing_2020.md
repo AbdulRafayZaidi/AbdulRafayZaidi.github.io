@@ -19,6 +19,8 @@ Naming convention is different for year 2020 and 2019, so for consistency, the v
 
 ## Overview
 
+### Data Structure
+
 Using R, we can take a quick peek of the dataset with following commands. 
 
 ```rst
@@ -39,6 +41,8 @@ Divvy_Trips_2019_full %>%
 #A tibble: 6,017 x 1
 ```
 
+
+
 ```rst
 Divvy_Trips_2019_full %>% 
 	distinct(to_station_id)
@@ -46,6 +50,29 @@ Divvy_Trips_2019_full %>%
 ```
 
 **The combined data has a record 3,818,004 rides, split into 12 columns having Trip ID, Start Time, End Time, Bike ID, Trip Duration, From Station (Starting Point), To Station (End Station), User Type, Gender, and Birthyear. The company has 6,017 bikes and 617 stations.**
+
+### Manipulation
+
+### R Libraries
+
+A number of R libraries were called to perform different functions. Following were used to clean, prepare, and analyze the data:
+
+```reStructuredText
+library("readr") 		## To import dataset
+library("janitor") 		## To clean the data
+library("dplyr") 		## To manipulate the dataframes
+library("lubridate") 	## To work with datetime values
+```
+
+For the visualization parts, these libraries came into play:
+
+```
+# Broadly, the following were used for mapping:
+library("leaflet") 		## To prepare JS based maps
+library("igraph")		## To find networks/edges
+library("sp")			## To work with long/lat coords
+library("htmlwidgets")	## To export interactive web maps
+```
 
 
 
