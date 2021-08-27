@@ -17,9 +17,13 @@ All the data is available [here](https://divvy-tripdata.s3.amazonaws.com/index.h
 
 
 
-## Overview
+## Prep Work
 
-The data for year 2020 is divided into 1 quarter and 9 months. The data is downloaded, skimmed, prepared, cleaned, and manipulated.
+### Overview
+
+The data for year 2020 is divided into 1 quarter and 9 months. The data is downloaded, skimmed, prepared, cleaned, and manipulated. This part deals with all the dirty work prior to the actual analysis and visualization. This prep-work lays the foundation of our data problem solving, and can take twice as much time and effort as the rest of it. 
+
+If you are more interested with the analysis, and results, you can jump ahead to [Data Summary](projects/bike_sharing_2020/bike_sharing_2020/#summary)
 
 ### R Libraries
 
@@ -32,7 +36,7 @@ library("dplyr") 		## To manipulate the dataframes
 library("lubridate") 	## To work with datetime values
 ```
 
-For the visualization parts, these libraries came into play:
+For the visualization part, these libraries came into play:
 
 ```rst
 # Broadly, the following were used for mapping:
@@ -104,10 +108,23 @@ After the cleaning operation, our data is ready for analysis. But before that, w
 * Longitude / latitude values for the stations are not given separately and  are included in the same row as each ride's information, alongside the station id and name. Since each bike has its own GPS device, there is slight variance in long/lat values of every station. However, each station can only have one unique geo-location, so we take mean value for all respective lat/long values of a station. These values are then merged in *station_id_names* data frame, and are removed from the *divvy_trips_2020*. 
 * By grouping, and summarizing *divvy_trips_2020*, total number of subscribers and casual riders visiting any station are calculated. First, we figure out total rides from starting stations, then for ending stations, and then we sum them up. The result is converted from long to wide format, number of rides by subscribers and customers falling into two separate columns, and is added to *station_id_names* data frame.
 
-```
+```rst
+head(station_id_names)
+  id      lat       lng                       label Customer Subscriber
+1  2 41.87650 -87.62053         Buckingham Fountain    18802       4671
+2  3 41.86722 -87.61536              Shedd Aquarium    17329       7885
+3  4 41.85625 -87.61333              Burnham Harbor     6670      18945
+4  5 41.87406 -87.62771      State St & Harrison St     6975       6166
+5  6 41.88697 -87.61281              Dusable Harbor    14411       8207
+6  7 41.88630 -87.61749 Field Blvd & South Water St     7519      10860
 ```
 
+### Data Summary {#summary}
 
+The data can be summarized as below:
+
+* Total number of stations is 669.
+* 
 
 ## Mapping the Data
 
