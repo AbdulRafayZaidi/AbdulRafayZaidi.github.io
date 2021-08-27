@@ -156,6 +156,17 @@ Sniffing the above map, we find some insightful points:
     ![Daily rides at all other stations](projects/Bike_Sharing_2020/tday_all_stations.png)
     
     As can be seen here, the result is significantly different for all other stations, where daily subscribers are far greater in number than the irregular customers. 
+    
+  * For both the groups, we can also compare the time of day when the ride was taken.
+  
+    ![Daily rides at all other stations](projects/Bike_Sharing_2020/time_three_stations.png)
+  
+    As apparent in this chart, unlike subscribers, casual riders access these stations more during the day and evening, suggesting that they come here mostly for leisure and not for work.  
+    The hourly rides chart for these stations further establishes this point, pointing at 12pm to 5pm as the peak hours. 
+  
+    ![Daily rides at all other stations](projects/Bike_Sharing_2020/hourly_three_stations.png)
+  
+  * The same might no be true for other stations in the cluster an would need to be studies separately. But since these three were the most active stations in the cluster, the marketing team would perhaps have a better chance at getting required conversions from these stations.
   
 
 
