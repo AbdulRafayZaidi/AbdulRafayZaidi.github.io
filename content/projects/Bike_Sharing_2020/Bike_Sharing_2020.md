@@ -166,7 +166,7 @@ Sniffing the above map, we find some insightful points:
   
     ![Daily rides at all other stations](projects/Bike_Sharing_2020/hourly_three_stations.png)
   
-  * The same might no be true for other stations in the cluster an would need to be studies separately. But since these three were the most active stations in the cluster, the marketing team would perhaps have a better chance at getting required conversions from these stations.
+  * The same might no be true for other stations in the cluster and they would need to be studied separately. But since these three were the most active points in the cluster, the marketing team would perhaps have a better chance at getting required conversions from them.
   
 
 
@@ -175,7 +175,13 @@ Sniffing the above map, we find some insightful points:
 
 ## Conclusion
 
-The above analysis has revealed very useful statistics that can help marketing team launch a successful media campaign. By focusing on the specific stations, which are broadly connected and have a high number of casual customers, or by offering special discounts on specific routes to the subscribers, or by offering special referrals in particular areas, the company can gain high conversion.
+The above analysis has revealed very useful statistics that can help marketing team launch a successful media campaign. 
+
+* Instead of focusing on particular stations, the company could target regions, the clusters where most casual riders are.
+* Further, the activity is different during different times of day, and different days of week. The behavior is not the same for our user types. So campaigning at particular days, and times can provide better results.
+* Some routes are more frequented than the rest, and need special attention. 
+
+This initial analysis provides a surface level picture of  the company's userbase. Some of the initial result for particular target cluster can be readily used for initial marketing, however, to make it successful, the analytics team must work in coordination with the marketing time, providing them base level information about specific stations or cluster whenever required.
 
 
 
