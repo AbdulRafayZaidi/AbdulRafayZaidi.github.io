@@ -41,3 +41,4 @@ footer {
     color: $white;
   }
 }
+<div>{{ .Params.date.Format .Site.Params.dateFormat }}</div>

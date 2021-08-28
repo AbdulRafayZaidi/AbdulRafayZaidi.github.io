@@ -1,7 +1,7 @@
 ---
 
 title: "Cyclistic Data Analysis-2020"
-date: 2021-03-21T22:34:46Z
+date: 2021-08-27T22:34:46Z
 draft: false
 ---
 
