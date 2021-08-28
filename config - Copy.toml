@@ -10,7 +10,6 @@ enforceSinglePage = false
 logoBig = "/images/logo.png"
 logoSmall = "favicon.png"
 favicon = "favicon.png"
-dateFormat = "02 Jan 2006"
 
 [Params.Feat]
 useBlog = true
