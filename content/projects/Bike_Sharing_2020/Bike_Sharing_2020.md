@@ -7,9 +7,9 @@ draft: false
 
 ## Introduction
 
-Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any who pay right when the need a bike. The bikes can be unlocked from one station and returned to any other station in the system anytime. 
+Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any who pay right when they need a bike. The bikes can be unlocked from one station and returned to any other station in the system anytime.
 
-The case study aims at understanding the usage patterns of both the types of users. The company's Financial analyst have determined that Annual Subscription can be more profitable than the walk-in rides. In order to increase the convert existing customers to annual subscribers, we need to figure out the hotspots, and user behaviors in order to lead successful marketing campaigns.
+The case study aims at understanding the usage patterns of both types of users. The company’s Financial analysts have determined that an Annual Subscription can be more profitable than walk-in rides. In order to increase the convert existing customers to annual subscribers, we need to figure out the hotspots, and user behaviors in order to lead successful marketing campaigns.
 
 Previously, data for year [2019](/projects/divvy_bike_sharing_2019/divvy_bike-sharing/) was worked upon, a basic analysis scratching only the surface level information. In contrast, this one goes in depth, and uses geo-mapping. 
 
