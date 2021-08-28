@@ -161,9 +161,9 @@ In the above map, some very useful information is revealed:
 
 * The two stations titled **HQ QR** and **HUBBARD ST BIKE CHECKING (LBS-WH-TEST)** are probably the company's headquarter as the further analysis reveals only one way flow of bikes.
 
-***Stations to the right, near the coast, have the most connectivity***
+***Stations to the right, near the bank, have the most connectivity***
 
-* Station called **Streeter Dr & Grand Ave** is the most connected point and lies at the coast near *Milton Lee Olive Park*. People travel to more than 450 destinations across the city from this station. Three other like this lie just near the coast, while the others in a close proximity. 
+* Station called **Streeter Dr & Grand Ave** is the most connected point and lies at the bank near *Milton Lee Olive Park*. People travel to more than 450 destinations across the city from this station. Three other like this lie just near the bank, while the others in a close proximity. 
 
 ***The origin station is also the top destination for many stations***
 
@@ -219,7 +219,7 @@ Sniffing the above map, we find some insightful facts:
 
 ![Focus Cluster on map](projects/Bike_Sharing_2020/Sub_cus_map_snap.png)
 
-* The center-right region of the map is overrun with subscribers, however, some stations to the far right, close to the coast, have a majority userbase among casual riders, with some spots having more than **70%** of them.  Given their proximity to Subscriber hotspots, this seems like an anomaly. These stations are also very active, as apparent by their relative size. To get more information about them, we need to dig deeper into our data. For our case, we investigate **Streeter Dr & Grand Ave**,  **Millennium Park**, and **Buckingham Fountain**, the three leading stations in this group, having 75%, 76%, and 80% customers respectively.
+* The center-right region of the map is overrun with subscribers, however, some stations to the far right, close to the bank, have a majority userbase among casual riders, with some spots having more than **70%** of them.  Given their proximity to Subscriber hotspots, this seems like an anomaly. These stations are also very active, as apparent by their relative size. To get more information about them, we need to dig deeper into our data. For our case, we investigate **Streeter Dr & Grand Ave**,  **Millennium Park**, and **Buckingham Fountain**, the three leading stations in this group, having 75%, 76%, and 80% customers respectively.
 
 * First thing to notice is that all three of these are located on Public Parks, thereby attracting people from all over the city. So it could be the case that people come here during their weekends, and because they don't do so very often, they haven't taken any membership. To confirm this hypothesis, we analyze them by summarizing and aggregating.
   * Results show that average trip duration to and fro these stations is about **45 minutes** for both subscribers and customers.
@@ -254,7 +254,7 @@ Sniffing the above map, we find some insightful facts:
   *Top 50 stations, where most riders are casual bikers, are visualized in the above map.*  
 
   * The stations can be seen bundled together in small chunks.
-  * Most of these lie close to the coast.
+  * Most of these lie close to the bank.
   * The clusters could be further analyzed like the previous example to understand the bikers' patterns. 
 
 ## Conclusion
