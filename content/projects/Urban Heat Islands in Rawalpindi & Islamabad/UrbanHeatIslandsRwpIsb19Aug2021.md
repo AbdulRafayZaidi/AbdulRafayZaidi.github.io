@@ -9,7 +9,7 @@ draft: false
 
 
 
-<div class="comparison-slider-wrapper"> ==$0
+<div class="comparison-slider-wrapper">== $0
 		<!-- Comparison Slider - this div contain the slider with the individual images captions -->
 	 	<div class="comparison-slider">
 			<div class="overlay">And I am the <strong>after</strong> image.</div>
@@ -23,7 +23,7 @@ draft: false
 		 <div class="divider"></div>
 		</div>
 		<!-- All global captions if exist can go on the div bellow -->
-	 	<div class="caption">I am the caption for the comparison slider and i can give in more detail a context off what you looking at, in this case we are looking at a demo of the comparison slider :)</div>
+	 	<div class="caption">Heat Map of Rawalpindi and Islamabad, presenting hottest and coldest regions in the twin city</div>
 	 </div>
 
 ***Heat Map of Rawalpindi and Islamabad, presenting hottest and coldest regions in the twin city***
