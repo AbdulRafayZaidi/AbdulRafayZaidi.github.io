@@ -1,17 +1,38 @@
 ---
 
 title: "Urban Heat Islands in Rawalpindi and Islamabad"
-date: 2021-09-4T22:34:46Z
+date: 2021-08-29T22:34:46Z
 draft: false
 ---
 
+<iframe frameborder="0" class="juxtapose" width="100%" height="1063" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=bb73dc58-0d82-11ec-abb7-b9a7ff2ee17c"></iframe>
+
+
+
+<div class="comparison-slider-wrapper"> ==$0
+		<!-- Comparison Slider - this div contain the slider with the individual images captions -->
+	 	<div class="comparison-slider">
+			<div class="overlay">And I am the <strong>after</strong> image.</div>
+		 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/marioPhoto-2.jpg" alt="marioPhoto 2">
+		 <!-- Div containing the image layed out on top from the left -->
+		 <div class="resize">
+			 <div class="overlay">I am the <strong>before</strong> image.</div>
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/marioPhoto-1.jpg" alt="marioPhoto 1">
+		 </div>
+		 <!-- Divider where user will interact with the slider -->
+		 <div class="divider"></div>
+		</div>
+		<!-- All global captions if exist can go on the div bellow -->
+	 	<div class="caption">I am the caption for the comparison slider and i can give in more detail a context off what you looking at, in this case we are looking at a demo of the comparison slider :)</div>
+	 </div>
+
+***Heat Map of Rawalpindi and Islamabad, presenting hottest and coldest regions in the twin city***
+
 ## Introduction
 
+The goal of this study is to analyze the heat distribution under various land-use conditions in Rawalpindi and Islamabad. Broadly speaking, the land-use could be classified into five types: Developed, Agriculture & Horticulture, Forest, Water, Barren. Because of limited local weather stations that monitor the air temperature, we have to rely on satellite imagery. 
 
-
-
-
-## Prep Work
+Landsat 8 images dated 19th Aug, 2021 were used in this study.
 
 ### Overview
 
