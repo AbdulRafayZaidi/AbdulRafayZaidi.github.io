@@ -25,7 +25,7 @@ Landsat 8 images dated 19th Aug, 2021 were used in this study.
 
 ## Methodology
 
-You can jump ahead  [Data Summary](projects/bike_sharing_2020/bike_sharing_2020/#summary) to the classification and results.
+In this section, the basic methodology is explained. You may jump ahead to [analysis](projects/uhi_rwp_isb_19aug2021/urbanheatislandsrwpisb19aug2021/#analysis) and results.
 
 ### Overview
 
@@ -35,23 +35,39 @@ All the processing was done in ESRI ArcGIS.
 
 ### Model
 
-To make the processing easier, a model was created inside the ArcGIS. You can download the toolbox here.
+To make the processing easier, a model was created inside the ArcGIS. You can download the toolbox [here](projects\UHI_RWP_ISB_19Aug2021\resources\LST.tbx).
 
-![Top Routes by Customers](projects/Urban Heat Islands in Rawalpindi & Islamabad/images/model_lst.png)
+![Top Routes by Customers](projects/UHI_RWP_ISB_19Aug2021/images/model_lst.png)
 
-### Data Summary {#summary}
+<center>
+        Model to create Land Surface Temprature Raster
+</center>
 
 
 
-<iframe seamless src="projects/Bike_Sharing_2020/cluster_map.html" width="100%" height="700"></iframe>
+![Top Routes by Customers](projects/UHI_RWP_ISB_19Aug2021/images/model_uhi.png)
+
+<center>
+        Model to create Urban Heat Island Raster
+</center>
+
+### Classification
+
+Supervised classification is run to identify various land uses. 
+
+
 
 *Most of the stations are located to the center-right, while on the periphery, the density decreases. Hovering over the stations, you can read their labels.*
 
-* 
-  
-  ![Top Routes by Customers](projects/Bike_Sharing_2020/sorted_by_customers.png)
-  
-  
+
+
+
+
+## Analysis {#analysis}
+
+
+
+
 
 ***Author: Syed Abdul Rafay***
 
