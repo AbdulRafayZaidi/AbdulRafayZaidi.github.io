@@ -5,9 +5,15 @@ date: 2021-08-29T22:34:46Z
 draft: false
 ---
 
-<iframe frameborder="0" class="juxtapose" width="100%" height="1063" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=bb73dc58-0d82-11ec-abb7-b9a7ff2ee17c"></iframe>
+<iframe frameborder="0" class="juxtapose" width="100%" height="600" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=aa0a639e-0d9e-11ec-abb7-b9a7ff2ee17c"></iframe>
 
-<iframe seamless src="projects\Urban Heat Islands in Rawalpindi & Islamabad/heat_map_comp.html" width="100%" height="600"></iframe>
+
+
+<center>
+    <p>
+        Side by side comparison of natural and thermal view of the twin cities: images taken on 19 August 2021
+    </p>
+</center>
 
 
 
@@ -17,9 +23,21 @@ The goal of this study is to analyze the heat distribution under various land-us
 
 Landsat 8 images dated 19th Aug, 2021 were used in this study.
 
+## Methodology
+
+You can jump ahead  [Data Summary](projects/bike_sharing_2020/bike_sharing_2020/#summary) to the classification and results.
+
 ### Overview
 
- [Data Summary](projects/bike_sharing_2020/bike_sharing_2020/#summary)
+Band 10 and Band 11 in Landsat 8 are surface temperature bands. For this case, Mono-Window Algorithm was used to extract lands surface temperature, which although not very accurate, suited well to this basic heat distribution study.
+
+All the processing was done in ESRI ArcGIS.
+
+### Model
+
+To make the processing easier, a model was created inside the ArcGIS. You can download the toolbox here.
+
+![Top Routes by Customers](projects/Urban Heat Islands in Rawalpindi & Islamabad/images/model_lst.png)
 
 ### Data Summary {#summary}
 
