@@ -132,17 +132,19 @@
 <p>All the processing was done in ESRI ArcGIS.</p>
 <h3 id="model">Model</h3>
 <p>To make the processing easier, a model was created inside the ArcGIS. You can download the toolbox <a href="projects%5CUHI_RWP_ISB_19Aug2021%5Cresources%5CLST.tbx">here</a>.</p>
-<p><img src="projects/UHI_RWP_ISB_19Aug2021/images/model_lst.png" alt="Top Routes by Customers"></p>
+<p><img src="projects/UHI_RWP_ISB_19Aug2021/images/model_lst.png" alt="LST Model"></p>
 <center>
         Model to create Land Surface Temprature Raster
 </center>
-<p><img src="projects/UHI_RWP_ISB_19Aug2021/images/model_uhi.png" alt="Top Routes by Customers"></p>
+<p><img src="projects/UHI_RWP_ISB_19Aug2021/images/model_uhi.png" alt="UHI Model"></p>
 <center>
         Model to create Urban Heat Island Raster
 </center>
 <h3 id="classification">Classification</h3>
 <p>Supervised classification is run to identify various land uses.</p>
-<p><em>Most of the stations are located to the center-right, while on the periphery, the density decreases. Hovering over the stations, you can read their labels.</em></p>
+<p><img src="projects/UHI_RWP_ISB_19Aug2021/images/supervised_classification.jpg" alt="Land-Use Classification"></p>
+<p>The resulting raster is then processed by filtering smaller pixels, smoothing class boundaries, and removing isolated regions, which is then converted to polygon.</p>
+<p><img src="projects/UHI_RWP_ISB_19Aug2021/images/class_result.jpg" alt="Land-Use Classification"></p>
 <h2 id="analysis">Analysis</h2>
 <p><em><strong>Author: Syed Abdul Rafay</strong></em></p>
 
