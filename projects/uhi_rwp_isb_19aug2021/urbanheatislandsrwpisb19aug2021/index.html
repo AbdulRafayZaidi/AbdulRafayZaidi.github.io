@@ -112,7 +112,7 @@
           <h1> Urban Heat Islands in Rawalpindi and Islamabad </h1>
 
             <div class="sub-header">
-              August 29, 2021 · One minute read
+              August 29, 2021 · 2 minutes read
             </div>
 
           <article class="entry-content">
@@ -126,20 +126,24 @@
 <p>The goal of this study is to analyze the heat distribution under various land-use conditions in Rawalpindi and Islamabad. Broadly speaking, the land-use could be classified into five types: Developed, Agriculture &amp; Horticulture, Forest, Water, Barren. Because of limited local weather stations that monitor the air temperature, we have to rely on satellite imagery.</p>
 <p>Landsat 8 images dated 19th Aug, 2021 were used in this study.</p>
 <h2 id="methodology">Methodology</h2>
-<p>You can jump ahead  <a href="projects/bike_sharing_2020/bike_sharing_2020/#summary">Data Summary</a> to the classification and results.</p>
+<p>In this section, the basic methodology is explained. You may jump ahead to <a href="projects/uhi_rwp_isb_19aug2021/urbanheatislandsrwpisb19aug2021/#analysis">analysis</a> and results.</p>
 <h3 id="overview">Overview</h3>
 <p>Band 10 and Band 11 in Landsat 8 are surface temperature bands. For this case, Mono-Window Algorithm was used to extract lands surface temperature, which although not very accurate, suited well to this basic heat distribution study.</p>
 <p>All the processing was done in ESRI ArcGIS.</p>
 <h3 id="model">Model</h3>
-<p>To make the processing easier, a model was created inside the ArcGIS. You can download the toolbox here.</p>
-<p>![Top Routes by Customers](projects/Urban Heat Islands in Rawalpindi &amp; Islamabad/images/model_lst.png)</p>
-<h3 id="summary">Data Summary</h3>
-<iframe seamless src="projects/Bike_Sharing_2020/cluster_map.html" width="100%" height="700"></iframe>
+<p>To make the processing easier, a model was created inside the ArcGIS. You can download the toolbox <a href="projects%5CUHI_RWP_ISB_19Aug2021%5Cresources%5CLST.tbx">here</a>.</p>
+<p><img src="projects/UHI_RWP_ISB_19Aug2021/images/model_lst.png" alt="Top Routes by Customers"></p>
+<center>
+        Model to create Land Surface Temprature Raster
+</center>
+<p><img src="projects/UHI_RWP_ISB_19Aug2021/images/model_uhi.png" alt="Top Routes by Customers"></p>
+<center>
+        Model to create Urban Heat Island Raster
+</center>
+<h3 id="classification">Classification</h3>
+<p>Supervised classification is run to identify various land uses.</p>
 <p><em>Most of the stations are located to the center-right, while on the periphery, the density decreases. Hovering over the stations, you can read their labels.</em></p>
-<ul>
-<li></li>
-</ul>
-<p><img src="projects/Bike_Sharing_2020/sorted_by_customers.png" alt="Top Routes by Customers"></p>
+<h2 id="analysis">Analysis</h2>
 <p><em><strong>Author: Syed Abdul Rafay</strong></em></p>
 
           </article>
