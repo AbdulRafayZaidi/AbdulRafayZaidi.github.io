@@ -6,7 +6,18 @@
     <description>Recent content in Projects on Abdul Rafay</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Aug 2021 22:34:46 +0000</lastBuildDate><atom:link href="https://syedabdulrafay.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Aug 2021 22:34:46 +0000</lastBuildDate><atom:link href="https://syedabdulrafay.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Urban Heat Islands in Rawalpindi and Islamabad</title>
+      <link>https://syedabdulrafay.com/projects/urban-heat-islands-in-rawalpindi-islamabad/urbanheatislandsrwpisb19aug2021/</link>
+      <pubDate>Sun, 29 Aug 2021 22:34:46 +0000</pubDate>
+      
+      <guid>https://syedabdulrafay.com/projects/urban-heat-islands-in-rawalpindi-islamabad/urbanheatislandsrwpisb19aug2021/</guid>
+      <description>Introduction The goal of this study is to analyze the heat distribution under various land-use conditions in Rawalpindi and Islamabad. Broadly speaking, the land-use could be classified into five types: Developed, Agriculture &amp;amp; Horticulture, Forest, Water, Barren. Because of limited local weather stations that monitor the air temperature, we have to rely on satellite imagery.
+Landsat 8 images dated 19th Aug, 2021 were used in this study.
+Overview Data Summary</description>
+    </item>
+    
     <item>
       <title>Cyclistic Data Analysis-2020</title>
       <link>https://syedabdulrafay.com/projects/bike_sharing_2020/bike_sharing_2020/</link>
@@ -25,6 +36,16 @@ The case study aims at understanding the usage patterns of both types of users. 
       <guid>https://syedabdulrafay.com/projects/divvy_bike_sharing_2019/divvy_bike-sharing/</guid>
       <description>Introduction Cyclistic is a bike-share company based in Chicago, USA. Its users are both the subscribers with annual membership and customers without any membership. The bikes can be unlocked from one station and returned to any other station in the system anytime.
 The goal is to understand how both the types of users use the service differently to target appropriate marketing campaign and increase the number of subscribers. The data for year 2019 was used for this project, available here https://divvy-tripdata.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://syedabdulrafay.com/projects/urban-heat-islands-in-rawalpindi-islamabad/image-comparison-slider/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://syedabdulrafay.com/projects/urban-heat-islands-in-rawalpindi-islamabad/image-comparison-slider/readme/</guid>
+      <description>Image Comparison Slider A Pen created on CodePen.io. Original URL: https://codepen.io/MarioDesigns/pen/KvXZPK.
+A simple and clean image comparison slider, fully responsive and touch ready made with css and jquery.</description>
     </item>
     
   </channel>
