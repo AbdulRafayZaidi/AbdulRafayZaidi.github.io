@@ -9,13 +9,11 @@
     <lastBuildDate>Sun, 29 Aug 2021 22:34:46 +0000</lastBuildDate><atom:link href="https://syedabdulrafay.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Urban Heat Islands in Rawalpindi and Islamabad</title>
-      <link>https://syedabdulrafay.com/projects/urban-heat-islands-in-rawalpindi-islamabad/urbanheatislandsrwpisb19aug2021/</link>
+      <link>https://syedabdulrafay.com/projects/uhi_rwp_isb_19aug2021/urbanheatislandsrwpisb19aug2021/</link>
       <pubDate>Sun, 29 Aug 2021 22:34:46 +0000</pubDate>
       
-      <guid>https://syedabdulrafay.com/projects/urban-heat-islands-in-rawalpindi-islamabad/urbanheatislandsrwpisb19aug2021/</guid>
-      <description>Introduction The goal of this study is to analyze the heat distribution under various land-use conditions in Rawalpindi and Islamabad. Broadly speaking, the land-use could be classified into five types: Developed, Agriculture &amp;amp; Horticulture, Forest, Water, Barren. Because of limited local weather stations that monitor the air temperature, we have to rely on satellite imagery.
-Landsat 8 images dated 19th Aug, 2021 were used in this study.
-Overview Data Summary</description>
+      <guid>https://syedabdulrafay.com/projects/uhi_rwp_isb_19aug2021/urbanheatislandsrwpisb19aug2021/</guid>
+      <description>Side by side comparison of natural and thermal view of the twin cities: images taken on 19 August 2021  Introduction The goal of this study is to analyze the heat distribution under various land-use conditions in Rawalpindi and Islamabad. Broadly speaking, the land-use could be classified into five types: Developed, Agriculture &amp;amp; Horticulture, Forest, Water, Barren. Because of limited local weather stations that monitor the air temperature, we have to rely on satellite imagery.</description>
     </item>
     
     <item>
@@ -181,16 +179,6 @@ But man’s greed for more has gone too far. His destructive hands have mutilate
       <guid>https://syedabdulrafay.com/about/summary/</guid>
       <description>A Writer, Traveler, and Climate Researcher. I am fond of exploring distant lands, mountain tops, and forests, the unseen where nobody walks. It brings me close to my roots, connecting me to the mother earth, the origin of all life. So I keep looking for ways to pay respects to life.
 Being a professional engineer, I have become more conscious of my own environmental impacts. My workplace mainly dealt with plastic products, so I had to find something new, a job that wasn’t a part of the problem, a place that took responsibility.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://syedabdulrafay.com/projects/urban-heat-islands-in-rawalpindi-islamabad/image-comparison-slider/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://syedabdulrafay.com/projects/urban-heat-islands-in-rawalpindi-islamabad/image-comparison-slider/readme/</guid>
-      <description>Image Comparison Slider A Pen created on CodePen.io. Original URL: https://codepen.io/MarioDesigns/pen/KvXZPK.
-A simple and clean image comparison slider, fully responsive and touch ready made with css and jquery.</description>
     </item>
     
   </channel>
