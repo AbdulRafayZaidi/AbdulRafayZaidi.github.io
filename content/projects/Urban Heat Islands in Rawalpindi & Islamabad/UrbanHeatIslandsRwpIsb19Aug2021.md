@@ -7,19 +7,9 @@ draft: false
 
 <iframe frameborder="0" class="juxtapose" width="100%" height="1063" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=bb73dc58-0d82-11ec-abb7-b9a7ff2ee17c"></iframe>
 
-<iframe seamless src="heat_map_comp.html" width="100%" height="1100"></iframe>
+<iframe seamless src="projects\Urban Heat Islands in Rawalpindi & Islamabad/heat_map_comp.html" width="100%" height="600"></iframe>
 
 
-
-
-
-
-
- 
-
-
-
-***Heat Map of Rawalpindi and Islamabad, presenting hottest and coldest regions in the twin city***
 
 ## Introduction
 
