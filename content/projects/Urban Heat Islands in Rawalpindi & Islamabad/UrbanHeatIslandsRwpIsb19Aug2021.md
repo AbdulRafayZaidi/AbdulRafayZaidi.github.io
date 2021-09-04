@@ -7,29 +7,17 @@ draft: false
 
 <iframe frameborder="0" class="juxtapose" width="100%" height="1063" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=bb73dc58-0d82-11ec-abb7-b9a7ff2ee17c"></iframe>
 
+<iframe seamless src="heat_map_comp.html" width="100%" height="1100"></iframe>
 
 
 
 
-<center>
-<div class="comparison-slider-wrapper">
-    	<link rel="stylesheet" href="style.css">
-		<!-- Comparison Slider - this div contain the slider with the individual images captions -->
-	 	<div class="comparison-slider">
-			<div class="overlay">And I am the <strong>after</strong> image.</div>
-		 <img src="rwp_heat.jpg" alt="marioPhoto 2">
-		 <!-- Div containing the image layed out on top from the left -->
-		 <div class="resize">
-			 <div class="overlay">I am the <strong>before</strong> image.</div>
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/marioPhoto-1.jpg" alt="marioPhoto 1">
-		 </div>
-		 <!-- Divider where user will interact with the slider -->
-		 <div class="divider"></div>
-		</div>
-		<!-- All global captions if exist can go on the div bellow -->
-	 	<div class="caption">Heat Map of Rawalpindi and Islamabad, presenting hottest and coldest regions in the twin city</div>
-	 </div>
-</center>
+
+
+
+ 
+
+
 
 ***Heat Map of Rawalpindi and Islamabad, presenting hottest and coldest regions in the twin city***
 
