@@ -37,7 +37,7 @@ All the processing was done in ESRI ArcGIS.
 
 To make the processing easier, a model was created inside the ArcGIS. You can download the toolbox [here](projects\UHI_RWP_ISB_19Aug2021\resources\LST.tbx).
 
-{{< figure src="images/model_lst.png" >}}
+
 
 ![LST Model](projects/UHI_RWP_ISB_19Aug2021/images/model_lst.png)
 
