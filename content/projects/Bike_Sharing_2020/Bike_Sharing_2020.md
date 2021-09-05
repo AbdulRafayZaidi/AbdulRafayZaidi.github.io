@@ -264,7 +264,9 @@ The above analysis has revealed very useful statistics that can help marketing t
 * Instead of focusing on particular stations, the company could target regions, the clusters where most casual bikers are. This could be an efficient and economical way of marketing.
 * Stations which are broadly connected, can also be helpful in spreading campaigns.
 * Further, the activity is different during different times of day, and different days of week. And the behavior is not the same for both our user types. So campaigning at particular days, and times can provide better results.
-* Some routes are more frequented than the rest, and need special attention. 
+* Some routes are more frequented than the rest, and need special attention.
+* Summarized from above, the company could initially target the stations listed in the chart below.
+   ![Most Active Stations](projects/Bike_Sharing_2020/most_active_stations.png)
 
 This initial analysis provides a crude picture of  the company's userbase. Some of the initial result for particular target cluster can be readily used for initial marketing, however, to make it successful, the analytics team must work in coordination with the marketing team, providing them base level information about specific stations or cluster whenever required.
 
