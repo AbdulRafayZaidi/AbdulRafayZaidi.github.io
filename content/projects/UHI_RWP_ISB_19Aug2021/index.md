@@ -37,7 +37,9 @@ All the processing was done in ESRI ArcGIS.
 
 To make the processing easier, a model was created inside the ArcGIS. You can download the toolbox [here](projects\UHI_RWP_ISB_19Aug2021\resources\LST.tbx).
 
-![LST Model](master/content/projects/UHI_RWP_ISB_19Aug2021/images/model_lst.png)
+{{< figure src="images/model_lst.png" >}}
+
+![LST Model](projects/UHI_RWP_ISB_19Aug2021/images/model_lst.png)
 
 <center>
         Model to create Land Surface Temprature Raster
@@ -45,7 +47,7 @@ To make the processing easier, a model was created inside the ArcGIS. You can do
 
 
 
-![UHI Model](images/model_uhi.png)
+![UHI Model](projects/UHI_RWP_ISB_19Aug2021/images/model_uhi.png)
 
 <center>
         Model to create Urban Heat Island Raster
