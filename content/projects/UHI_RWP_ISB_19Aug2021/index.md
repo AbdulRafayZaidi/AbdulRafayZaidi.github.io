@@ -83,11 +83,7 @@ Next, we isolate particular areas of interest:
 
 
 
-
-
-{{< gallery match="projects/UHI_RWP_ISB_19Aug2021/images/*" sortOrder="desc" rowHeight="150" margins="5" resizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview="true" >}}
-
-
+{{< gallery dir="uhi_rwpisb_images/" />}} {{< load-photoswipe >}}
 
 ***Author: Syed Abdul Rafay***
 
