@@ -51,6 +51,12 @@ To make the processing easier, a model was created inside the ArcGIS. You can do
         Model to create Urban Heat Island Raster
 </center>
 
+
+Using this model, we get this heat map.
+
+![Heat Map](projects/UHI_RWP_ISB_19Aug2021/images/hm_full.jpg)
+
+
 ### Classification
 
 Supervised classification is run to identify various land uses. 
@@ -63,11 +69,17 @@ The resulting raster is then processed by filtering smaller pixels, smoothing cl
 
 
 
-
-
 ## Analysis {#analysis}
 
+Now that the required layers are here, we can begin analyzing urban areas to locate heat islands.
 
+In  hindsight, we can see that Rawalpindi is significantly hotter than Islamabad. 
+
+![Heat Map Overlayed above Street Map](projects/UHI_RWP_ISB_19Aug2021/images/hm_sv_wide.jpg)
+
+
+
+Next, we isolate particular areas of interest:
 
 
 
