@@ -85,7 +85,7 @@ Next, we isolate particular areas of interest:
 
 
 
-{{< gallery dir="uhi_rwpisb_images/" />}} {{< load-photoswipe >}}
+{{< gallery dir="uhi_rwpisb_images/" class="gallery caption-effect-slide hover-effect-zoom hover-transition"/>}} {{< load-photoswipe >}}
 
 ***Author: Syed Abdul Rafay***
 
