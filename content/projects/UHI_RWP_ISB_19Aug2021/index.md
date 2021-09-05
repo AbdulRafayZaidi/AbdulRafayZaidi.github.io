@@ -5,7 +5,7 @@ date: 2021-08-29T22:34:46Z
 draft: false
 ---
 
-<iframe frameborder="0" class="juxtapose" width="100%" height="600" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=aa0a639e-0d9e-11ec-abb7-b9a7ff2ee17c"></iframe>
+<iframe frameborder="0" class="juxtapose" width="100%" height="600" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=76ca7798-0e4e-11ec-abb7-b9a7ff2ee17c"></iframe>
 
 
 
