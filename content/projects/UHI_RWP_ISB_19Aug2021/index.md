@@ -87,5 +87,11 @@ Next, we isolate particular areas of interest:
 
 {{< gallery dir="uhi_rwpisb_images/" class="gallery" caption-effect="slide" hover-effect="zoom" hover-transition="smooth"/>}} {{< load-photoswipe >}}
 
+The surface temperature of above regions is 3-5 Degree Celsius higher than mean surface temperature, which is 65degrees, and in terms of Urban Heat Island, 1.1-2 Degree Celsius
+
+
+
+**To be continued**
+
 ***Author: Syed Abdul Rafay***
 
