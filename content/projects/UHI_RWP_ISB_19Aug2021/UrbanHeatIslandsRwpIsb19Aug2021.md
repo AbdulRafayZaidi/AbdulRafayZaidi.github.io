@@ -50,10 +50,6 @@ To make the processing easier, a model was created inside the ArcGIS. You can do
 <center>
         Model to create Urban Heat Island Raster
 </center>
-Using the above model, we get this heat map.
-
-![Heat Map](projects/UHI_RWP_ISB_19Aug2021/images/hm_full.jpg)
-
 
 ### Classification
 
@@ -67,15 +63,11 @@ The resulting raster is then processed by filtering smaller pixels, smoothing cl
 
 
 
+
+
 ## Analysis {#analysis}
 
-No that our layers are ready, we shall find the urban heat islands.
 
-```
-{{< gallery dir="projects/UHI_RWP_ISB_19Aug2021/imagesprojects/UHI_RWP_ISB_19Aug2021/images/" />}}
-```
-
- 
 
 
 
