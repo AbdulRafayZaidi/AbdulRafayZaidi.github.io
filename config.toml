@@ -1,7 +1,7 @@
 baseURL = "https://syedabdulrafay.com/"
 languageCode = "en-us"
 title = "Abdul Rafay"
-theme = "osprey-delight"
+theme = ["osprey-delight", "hugo-shortcode-gallery"]
 
 [Params]
 tagline = """# A.Rafay 

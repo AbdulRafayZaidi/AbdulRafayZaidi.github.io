@@ -77,7 +77,15 @@ In  hindsight, we can see that Rawalpindi is significantly hotter than Islamabad
 
 ![Heat Map Overlayed above Street Map](projects/UHI_RWP_ISB_19Aug2021/images/hm_sv_wide.jpg)
 
+``` gallery: [
+   
+   gallery: [
+   "vertical": [ 
+        "projects/UHI_RWP_ISB_19Aug2021/images/hm_sv_wide.jpg"
 
+    ]
+    ]
+```
 
 Next, we isolate particular areas of interest:
 
