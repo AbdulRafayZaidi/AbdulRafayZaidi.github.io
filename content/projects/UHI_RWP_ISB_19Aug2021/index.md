@@ -25,7 +25,7 @@ Landsat 8 images dated 19th Aug, 2021 were used in this study.
 
 ## Methodology
 
-In this section, the basic methodology is explained. You may jump ahead to [analysis](projects/uhi_rwp_isb_19aug2021/urbanheatislandsrwpisb19aug2021/#analysis) and results.
+In this section, the basic methodology is explained. You may jump ahead to [analysis](projects/uhi_rwp_isb_19aug2021/index/#analysis) and results.
 
 ### Overview
 
