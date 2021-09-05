@@ -38,7 +38,7 @@
 
   <meta name="theme-color" content="#0097a7">
 
-  <link rel="canonical" href="https://syedabdulrafay.com/projects/uhi_rwp_isb_19aug2021/urbanheatislandsrwpisb19aug2021/">
+  <link rel="canonical" href="https://syedabdulrafay.com/projects/uhi_rwp_isb_19aug2021/">
   
   
 
@@ -152,6 +152,122 @@
 <p>In  hindsight, we can see that Rawalpindi is significantly hotter than Islamabad.</p>
 <p><img src="projects/UHI_RWP_ISB_19Aug2021/images/hm_sv_wide.jpg" alt="Heat Map Overlayed above Street Map"></p>
 <p>Next, we isolate particular areas of interest:</p>
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+	
+
+	
+	
+	
+		<script src="/shortcode-gallery/lazy/jquery.lazy.min.js"></script>
+	
+
+	<script src="/shortcode-gallery/swipebox/js/jquery.swipebox.min.js"></script>
+	<link rel="stylesheet" href="/shortcode-gallery/swipebox/css/swipebox.min.css">
+
+	<script src="/shortcode-gallery/justified_gallery/jquery.justifiedGallery.min.js"></script>
+	<link rel="stylesheet" href="/shortcode-gallery/justified_gallery/justifiedGallery.min.css"/>
+
+
+<style>
+	
+
+	
+</style>
+
+
+
+
+
+<div id="gallery-0-wrapper" class="gallery-wrapper">
+<div id="gallery-0" class="justified-gallery">
+	
+</div>
+</div>
+
+<script>
+	if (!jQuery) {
+		alert("jquery is not loaded");
+	}
+
+	$( document ).ready(() => {
+		const gallery = $("#gallery-0");
+		
+
+		gallery.justifiedGallery({
+			rowHeight : "150",
+			margins : "5",
+			border : 0,
+			waitThumbnailsLoad : false,
+			lastRow : "justify",
+			captions : false,
+			
+			
+		});
+
+		
+		let swipeboxInstance = null;
+
+		gallery.on('jg.complete', () => {
+			
+				
+				
+				$(() => {
+					$('.lazy').Lazy({
+						visibleOnly: true,
+						afterLoad: element => element.css({filter: "none", transition: "filter 1.0s ease-in-out"})
+					});
+				});
+			
+
+			swipeboxInstance = $('.galleryImg').swipebox(
+				jQuery.extend({},
+					{  }
+				)
+			);
+		});
+
+		
+		
+	});
+</script>
+
 <p><em><strong>Author: Syed Abdul Rafay</strong></em></p>
 
           </article>

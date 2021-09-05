@@ -8,11 +8,20 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Aug 2021 22:34:46 +0000</lastBuildDate><atom:link href="https://syedabdulrafay.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Urban Heat Islands in Rawalpindi and Islamabad</title>
-      <link>https://syedabdulrafay.com/projects/uhi_rwp_isb_19aug2021/urbanheatislandsrwpisb19aug2021/</link>
+      <title>test</title>
+      <link>https://syedabdulrafay.com/test/</link>
       <pubDate>Sun, 29 Aug 2021 22:34:46 +0000</pubDate>
       
-      <guid>https://syedabdulrafay.com/projects/uhi_rwp_isb_19aug2021/urbanheatislandsrwpisb19aug2021/</guid>
+      <guid>https://syedabdulrafay.com/test/</guid>
+      <description>mm f/ sec ISO &#34;       if (!jQuery) { alert(&#34;jquery is not loaded&#34;); } $( document ).ready(() = { const gallery = $(&#34;#gallery-0&#34;); gallery.justifiedGallery({ rowHeight : &#34;150&#34;, margins : &#34;5&#34;, border : 0, waitThumbnailsLoad : false, lastRow : &#34;justify&#34;, captions : false, }); let swipeboxInstance = null; gallery.</description>
+    </item>
+    
+    <item>
+      <title>Urban Heat Islands in Rawalpindi and Islamabad</title>
+      <link>https://syedabdulrafay.com/projects/uhi_rwp_isb_19aug2021/</link>
+      <pubDate>Sun, 29 Aug 2021 22:34:46 +0000</pubDate>
+      
+      <guid>https://syedabdulrafay.com/projects/uhi_rwp_isb_19aug2021/</guid>
       <description>Side by side comparison of natural and thermal view of the twin cities: images taken on 19 August 2021  Introduction The goal of this study is to analyze the heat distribution under various land-use conditions in Rawalpindi and Islamabad. Broadly speaking, the land-use could be classified into five types: Developed, Agriculture &amp;amp; Horticulture, Forest, Water, Barren. Because of limited local weather stations that monitor the air temperature, we have to rely on satellite imagery.</description>
     </item>
     
