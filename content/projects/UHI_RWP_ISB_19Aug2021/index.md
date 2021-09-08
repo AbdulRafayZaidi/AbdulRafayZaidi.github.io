@@ -19,9 +19,8 @@ draft: false
 
 ## Introduction
 
-The goal of this study is to analyze the heat distribution under various land-use conditions in Rawalpindi and Islamabad. Broadly speaking, the land-use could be classified into five types: Developed, Agriculture & Horticulture, Forest, Water, Barren. Because of limited local weather stations that monitor the air temperature, we have to rely on satellite imagery. 
-
-Landsat 8 images dated 19th Aug, 2021 were used in this study.
+The goal of this study is to analyze the heat distribution under various land-use conditions in Rawalpindi and Islamabad. Broadly speaking, land use could be classified into five types: Developed, Agriculture & Horticulture, Forest, Water, Barren. Because of limited local weather stations that monitor the air temperature, we have to rely on satellite imagery. 
+Landsat 8 images dated 19th Aug 2021 were used in this study.
 
 ## Methodology
 

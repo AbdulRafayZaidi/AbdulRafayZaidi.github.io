@@ -269,7 +269,7 @@ The above analysis has revealed very useful statistics that can help marketing t
 
 * Some routes are more frequented than the rest and need special attention.
 
-* Summarized from above, the company could initially target the stations listed in the chart below.
+* Correlating with above, the company could initially target the stations listed in the chart below.
 
 
    ![Most Active Stations](projects/Bike_Sharing_2020/most_acive_stations.png)
