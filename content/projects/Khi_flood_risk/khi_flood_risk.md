@@ -25,7 +25,7 @@ However, free DEM data is only available up to the year 2010. Furthermore, the s
 
 After the initial process, Urban Growth was analyzed using Landsat Data. For the year 2000, Landsat7 data was used, and for the year 2021, Landsat8 images were used.
 
-Analyzing the Urban Built Area, it was found that from that, the built area increased from 328 square kilometers in the year 2000 to 554 square kilometers in the year 2021.
+Analyzing the Urban Built Area, it was found that the built area increased from 328 square kilometers in the year 2000 to 554 square kilometers in the year 2021.
 
 A buffer is generated around streams 3,4 and 5, having a width of 2-3km to analyze how the city has grown around the drain channels. Around these streams, the built area has increased from 122sqkm to 217 sq km. 
 
@@ -41,10 +41,10 @@ A buffer zone of 500m width (250m on both sides of the river) is generated aroun
 
 From the analysis, we get the following results:
 
-|      | **Urban Built Area Square Km** | **Population** | **Urban Built Area within 2-3 km of  key natural streams** | **Urban Built Area near 500m River  Buffer Zone** |      |
-| ---- | ------------------------------ | -------------: | :--------------------------------------------------------- | ------------------------------------------------- | ---- |
-| 2000 | 328                            |    9.8 million | 122 sq km                                                  | 35 sq km                                          |      |
-| 2021 | 554                            |   1.65 million | 217 sq km                                                  | 57 sq km                                          |      |
+|      | Urban Built Area Square Km |   Population | Urban Built Area within 2-3 km of  key natural streams | Urban Built Area near 500m River  Buffer Zone |
+| ---- | -------------------------- | -----------: | :----------------------------------------------------- | --------------------------------------------- |
+| 2000 | 328                        |  9.8 million | 122 sq km                                              | 35 sq km                                      |
+| 2021 | 554                        | 1.65 million | 217 sq km                                              | 57 sq km                                      |
 
 ![Karachi Map 2021](projects/Khi_flood_risk/khi_2021_flood.jpg)
 
