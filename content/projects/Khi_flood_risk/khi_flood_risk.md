@@ -44,7 +44,7 @@ From the analysis, we get the following results:
 |      | Urban Built Area Square Km |   Population | Urban Built Area within 2-3 km of  key natural streams | Urban Built Area near 500m River  Buffer Zone |
 | ---- | -------------------------- | -----------: | :----------------------------------------------------- | --------------------------------------------- |
 | 2000 | 328                        |  9.8 million | 122 sq km                                              | 35 sq km                                      |
-| 2021 | 554                        | 1.65 million | 217 sq km                                              | 57 sq km                                      |
+| 2021 | 554                        | 1.65 million | 217 sq km                                              | 56 sq km                                      |
 
 ![Karachi Map 2021](projects/Khi_flood_risk/khi_2021_flood.jpg)
 
