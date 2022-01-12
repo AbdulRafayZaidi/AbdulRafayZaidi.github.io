@@ -126,7 +126,7 @@
 <p>The initial goal was to produce the natural water streams from the DEM data for 2000 and 2021 and analyze them to see how urban development has affected natural water pathways, thus causing Urban Floods.</p>
 <p>However, free DEM data is only available up to the year 2010. Furthermore, the spatial resolution of this data is very small. For this project, DEM from ASTER V3.0 data was used to generate natural water stream using a flow accumulation algorithm. We get a stream network with an order of 5. It has a hierarchical pattern, where streams of order 1 are at the top, gradually flowing into lower-order streams, where stream order 5 is at the bottom. The stream of orders 3, 4, and 5 are the major drain channels running throughout the city.</p>
 <p>After the initial process, Urban Growth was analyzed using Landsat Data. For the year 2000, Landsat7 data was used, and for the year 2021, Landsat8 images were used.</p>
-<p>Analyzing the Urban Built Area, it was found that from that, the built area increased from 328 square kilometers in the year 2000 to 554 square kilometers in the year 2021.</p>
+<p>Analyzing the Urban Built Area, it was found that the built area increased from 328 square kilometers in the year 2000 to 554 square kilometers in the year 2021.</p>
 <p>A buffer is generated around streams 3,4 and 5, having a width of 2-3km to analyze how the city has grown around the drain channels. Around these streams, the built area has increased from 122sqkm to 217 sq km.</p>
 <h2 id="inaccuracies"><strong>Inaccuracies</strong></h2>
 <p>Actual drain channels mapped by user “consultses” available at ArcGIS online were included for further investigation.</p>
@@ -138,11 +138,10 @@
 <thead>
 <tr>
 <th></th>
-<th><strong>Urban Built Area Square Km</strong></th>
-<th style="text-align:right"><strong>Population</strong></th>
-<th style="text-align:left"><strong>Urban Built Area within 2-3 km of  key natural streams</strong></th>
-<th><strong>Urban Built Area near 500m River  Buffer Zone</strong></th>
-<th></th>
+<th>Urban Built Area Square Km</th>
+<th style="text-align:right">Population</th>
+<th style="text-align:left">Urban Built Area within 2-3 km of  key natural streams</th>
+<th>Urban Built Area near 500m River  Buffer Zone</th>
 </tr>
 </thead>
 <tbody>
@@ -152,7 +151,6 @@
 <td style="text-align:right">9.8 million</td>
 <td style="text-align:left">122 sq km</td>
 <td>35 sq km</td>
-<td></td>
 </tr>
 <tr>
 <td>2021</td>
@@ -160,7 +158,6 @@
 <td style="text-align:right">1.65 million</td>
 <td style="text-align:left">217 sq km</td>
 <td>57 sq km</td>
-<td></td>
 </tr>
 </tbody>
 </table>
