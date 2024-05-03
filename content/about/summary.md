@@ -5,10 +5,10 @@ draft: false
 image: "/blog/images/1614531325208.jpg"
 ---
 
-## A Writer, Traveler, and Climate Researcher.
+## A Creator, Traveler, and Engineer.
 
-I am fond of exploring distant lands, mountain tops, and forests, the unseen where nobody walks. It brings me close to my roots, connecting me to the mother earth, the origin of all life. So I keep looking for ways to pay respects to life.
+I am fond of exploring distant lands, mountain tops, and forests, the unseen where nobody walks. It brings me close to my roots, connecting me to mother earth, the origin of all life.
 
-Being a professional engineer, I have become more conscious of my own environmental impacts. My workplace mainly dealt with plastic products, so I had to find something new, a job that wasn’t a part of the problem, a place that took responsibility. 
+Being a professional engineer, I have become more conscious of my own environmental impacts. I am now committed to using my professional and technical knowledge in becoming part of the solution. 
 
-I have a passion for writing and have been creating poetry and prose since my school days.  My short story titled “Giddar Singhi” won South Asia Microfiction Award in 2020. I am also currently working on my anthology and hope to publish it this year.
+I have a passion for all things creative. I draw, paint, and write. I have been writing poetry and prose since an early age. Some of my creative works have won awards, including a short story titled “Giddar Singhi” that won South Asia Microfiction Award in 2020. I am also currently working on my anthology and hope to publish it soon..
