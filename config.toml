@@ -5,7 +5,7 @@ theme = ["osprey-delight", "hugo-easy-gallery"]
 
 [Params]
 tagline = """# A.Rafay 
-Engineer. Traveller. Writer."""
+Engineer. Bibliophile. Traveler."""
 enforceSinglePage = false
 logoBig = "/images/logo.png"
 logoSmall = "favicon.png"
